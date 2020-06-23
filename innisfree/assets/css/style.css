@@ -73,5 +73,28 @@ Inheritor : 문세미
   font-weight: 900;
   src: url("../font/NanumGothic-ExtraBold.eot");
   src: url("../font/NanumGothic-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../font/NanumGothic-ExtraBold.woff") format("woff"), url("../font/NanumGothic-ExtraBold.otf") format("opentype"), url("../font/NanumGothic-ExtraBold.ttf") format("truetype"); }
+body {
+  font-size: 15px;
+  font-weight: 500;
+  font-family: Lato, NanumSquare, NanumGothic, san-serif; }
+
+.main-container {
+  max-width: 1500px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 100px 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
+header {
+  height: 95px;
+  line-height: 95px; }
+  header .main-container {
+    padding: 0; }
+    header .main-container .logo {
+      float: left; }
+    header .main-container .pc-lnb {
+      float: right; }
 
 /*# sourceMappingURL=style.css.map */

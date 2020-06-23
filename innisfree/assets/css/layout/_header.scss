@@ -1,2 +1,17 @@
 @charset "UTF-8";
 
+// header css
+
+header{
+    height: 95px;
+    line-height: 95px;
+    .main-container{
+        padding: 0;
+        .logo{
+            float: left;
+        }
+        .pc-lnb{
+            float: right;
+        }
+    }
+}

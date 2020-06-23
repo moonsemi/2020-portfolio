@@ -1,2 +1,10 @@
 @charset "UTF-8";
 
+// mixin - 자주 쓰는 요소 컴포넌트화
+
+@mixin border-box{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+

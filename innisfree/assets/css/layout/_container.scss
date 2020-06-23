@@ -1,3 +1,12 @@
 @charset "UTF-8";
 
+body{
+    font-size: 15px; font-weight: 500;
+    font-family: Lato, NanumSquare, NanumGothic, san-serif;
+}
 
+.main-container{
+    max-width: 1500px; height: 100%;
+    margin: 0 auto; padding: 100px 0;
+    @include border-box;
+}
