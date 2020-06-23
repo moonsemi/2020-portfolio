@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+@mixin font-face($name, $weight, $path) {
+   @font-face {
+      font-family: $name;
+      font-weight: $weight;
+      src: url($path + ".eot");
+      src: url($path + ".eot?#iefix") format('embedded-opentype'),
+      url($path + ".woff") format('woff'),
+      url($path + ".otf") format('opentype'),
+      url($path + ".ttf") format('truetype');
+   }
+}
+
+//Lato
+@include font-face(Lato, 400, "../font/Lato-Light");
+@include font-face(Lato, 500, "../font/Lato-Regular");
+@include font-face(Lato, 700, "../font/Lato-Bold");
+@include font-face(Lato, 900, "../font/Lato-Black");
+
+//NanumSquare
+@include font-face(NanumSquare, 400, "../font/NanumSquareL");
+@include font-face(NanumSquare, 500, "../font/NanumSquareR");
+@include font-face(NanumSquare, 700, "../font/NanumSquareB");
+
+//NanumGothic
+@include font-face(NanumGothic, 500, "../font/NanumGothic-Regular");
+@include font-face(NanumGothic, 700, "../font/NanumGothic-Bold");
+@include font-face(NanumGothic, 900, "../font/NanumGothic-ExtraBold");

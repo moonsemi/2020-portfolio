@@ -1,0 +1,77 @@
+@charset "UTF-8";
+/* ===================
+copyright 문세미 all rights reserved
+-------------------------------------
+The writer : 문세미
+Time for first: 2020-06-23,
+Time for refresh lately:
+Inheritor : 문세미
+====================*/
+/* ===================
+
+ ! 가이드라인
+
+ 호출 순서 ( 앞에 기재된 scss를 먼저 호출 )
+ 1. base : reset.css / _font.scss (초기화/폰트)
+ 2. helper : mixin.scss (SASS믹스인/함수)
+ 3. layout : _components / _header.scss / _footer.scss (홈페이지의 크고 작은 구성요소)
+ 4. pages : main / sub 특성화된 scss
+ 5. vendor : 외부 라이브러리와 프레임워크에서 제공하는 CSS파일
+
+ ※ reset을 제외한 scss앞에 _(언더바)를 붙일 것.
+   _(언더바)붙인 파일은 부분화 파일임을 명시함.
+
+====================== */
+@import url(base/reset.css);
+@font-face {
+  font-family: Lato;
+  font-weight: 400;
+  src: url("../font/Lato-Light.eot");
+  src: url("../font/Lato-Light.eot?#iefix") format("embedded-opentype"), url("../font/Lato-Light.woff") format("woff"), url("../font/Lato-Light.otf") format("opentype"), url("../font/Lato-Light.ttf") format("truetype"); }
+@font-face {
+  font-family: Lato;
+  font-weight: 500;
+  src: url("../font/Lato-Regular.eot");
+  src: url("../font/Lato-Regular.eot?#iefix") format("embedded-opentype"), url("../font/Lato-Regular.woff") format("woff"), url("../font/Lato-Regular.otf") format("opentype"), url("../font/Lato-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: Lato;
+  font-weight: 700;
+  src: url("../font/Lato-Bold.eot");
+  src: url("../font/Lato-Bold.eot?#iefix") format("embedded-opentype"), url("../font/Lato-Bold.woff") format("woff"), url("../font/Lato-Bold.otf") format("opentype"), url("../font/Lato-Bold.ttf") format("truetype"); }
+@font-face {
+  font-family: Lato;
+  font-weight: 900;
+  src: url("../font/Lato-Black.eot");
+  src: url("../font/Lato-Black.eot?#iefix") format("embedded-opentype"), url("../font/Lato-Black.woff") format("woff"), url("../font/Lato-Black.otf") format("opentype"), url("../font/Lato-Black.ttf") format("truetype"); }
+@font-face {
+  font-family: NanumSquare;
+  font-weight: 400;
+  src: url("../font/NanumSquareL.eot");
+  src: url("../font/NanumSquareL.eot?#iefix") format("embedded-opentype"), url("../font/NanumSquareL.woff") format("woff"), url("../font/NanumSquareL.otf") format("opentype"), url("../font/NanumSquareL.ttf") format("truetype"); }
+@font-face {
+  font-family: NanumSquare;
+  font-weight: 500;
+  src: url("../font/NanumSquareR.eot");
+  src: url("../font/NanumSquareR.eot?#iefix") format("embedded-opentype"), url("../font/NanumSquareR.woff") format("woff"), url("../font/NanumSquareR.otf") format("opentype"), url("../font/NanumSquareR.ttf") format("truetype"); }
+@font-face {
+  font-family: NanumSquare;
+  font-weight: 700;
+  src: url("../font/NanumSquareB.eot");
+  src: url("../font/NanumSquareB.eot?#iefix") format("embedded-opentype"), url("../font/NanumSquareB.woff") format("woff"), url("../font/NanumSquareB.otf") format("opentype"), url("../font/NanumSquareB.ttf") format("truetype"); }
+@font-face {
+  font-family: NanumGothic;
+  font-weight: 500;
+  src: url("../font/NanumGothic-Regular.eot");
+  src: url("../font/NanumGothic-Regular.eot?#iefix") format("embedded-opentype"), url("../font/NanumGothic-Regular.woff") format("woff"), url("../font/NanumGothic-Regular.otf") format("opentype"), url("../font/NanumGothic-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: NanumGothic;
+  font-weight: 700;
+  src: url("../font/NanumGothic-Bold.eot");
+  src: url("../font/NanumGothic-Bold.eot?#iefix") format("embedded-opentype"), url("../font/NanumGothic-Bold.woff") format("woff"), url("../font/NanumGothic-Bold.otf") format("opentype"), url("../font/NanumGothic-Bold.ttf") format("truetype"); }
+@font-face {
+  font-family: NanumGothic;
+  font-weight: 900;
+  src: url("../font/NanumGothic-ExtraBold.eot");
+  src: url("../font/NanumGothic-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../font/NanumGothic-ExtraBold.woff") format("woff"), url("../font/NanumGothic-ExtraBold.otf") format("opentype"), url("../font/NanumGothic-ExtraBold.ttf") format("truetype"); }
+
+/*# sourceMappingURL=style.css.map */

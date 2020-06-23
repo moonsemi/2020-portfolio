@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+/* ===================
+copyright 문세미 all rights reserved
+-------------------------------------
+The writer : 문세미
+Time for first: 2020-06-23,
+Time for refresh lately:
+Inheritor : 문세미
+====================*/
+
+// 이 시트는 부분화 된scss를 호출하며, html에 link rel로 호출되는 페이지.
+
+/* ===================
+
+ ! 가이드라인
+
+ 호출 순서 ( 앞에 기재된 scss를 먼저 호출 )
+ 1. base : reset.css / _font.scss (초기화/폰트)
+ 2. helper : mixin.scss (SASS믹스인/함수)
+ 3. layout : _components / _header.scss / _footer.scss (홈페이지의 크고 작은 구성요소)
+ 4. pages : main / sub 특성화된 scss
+ 5. vendor : 외부 라이브러리와 프레임워크에서 제공하는 CSS파일
+
+ ※ reset을 제외한 scss앞에 _(언더바)를 붙일 것.
+   _(언더바)붙인 파일은 부분화 파일임을 명시함.
+
+====================== */
+
+//Depth level 1. [ base : font -> mixin -> reset ]
+@import "base/font";
+@import "base/mixin";
+@import "base/reset.css";
+
+//Depth level 2. [ layout : components -> container -> footer -> header ]
+@import "layout/components";
+@import "layout/container";
+@import "layout/footer";
+@import "layout/header";
+
+//Depth level 3. [ pages : main ]
+@import "pages/main";
+
+//Depth level 4. [ vendor ]
+@import "vendor/vendor";
