@@ -1,2 +1,39 @@
 @charset "UTF-8";
 
+.main-visual{
+    position: relative;
+    .gallery-top{
+        .slide{
+            height: 860px;
+            &.bg-slide-img01{
+                background-image: url(../images/main-visual-bg01.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            &.bg-slide-img02{
+                background-image: url(../images/main-visual-bg02.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            &.bg-slide-img03{
+                background-image: url(../images/main-visual-bg03.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+    }
+    .main-container{
+        position: relative;
+        .gallery-text{
+            @include top-center; left: 0;
+            z-index: 2;
+        }
+        .gallery-thumbs{
+            .slick-track{
+                margin-left: 34%; margin-top: 70px;
+                // margin-left: 504px;
+            }
+        }
+    }
+}
+// main-visual end;

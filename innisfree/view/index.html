@@ -6,6 +6,13 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>innisfree</title>
         <link rel="stylesheet" href="../assets/css/style.css">
+        <!-- swiperJs css -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+        <!-- swiperJs js -->
+        <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+        <!-- js 기술 -->
+        <script src="../assets/js/script.js"></script>
+        
     </head>
     <body>
         <header class="header">
@@ -17,5 +24,68 @@
                 </div>
             </div>
         </header>
+        <!-- header end; -->
+
+        <section class="wrap">
+            <article class="main-visual swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide-img01">
+                        <div class="main-container">
+                            <div class="txt-area">
+                                <p class="sub-title">SNS대란</p>
+                                <p class="title">토닉워터로 청량하게</p>
+                                <p class="view-btn"><a href="javascript:;">자세히보기</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide-img02">
+                        <div class="main-container">
+                            <div class="txt-area">
+                                <p class="sub-title">바디</p>
+                                <p class="title">
+                                    건조한 - 피부 <br>
+                                    촉촉하게 보습
+                                </p>
+                                <p class="view-btn"><a href="javascript:;">자세히보기</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide-img03">
+                        <div class="main-container">
+                            <div class="txt-area">
+                                <p class="sub-title">SNS대란</p>
+                                <p class="title">
+                                    화이트 데이, <br>
+                                    토닉워터로 마음을 <br>
+                                    전하세요
+                                </p>
+                                <p class="view-btn"><a href="javascript:;">자세히보기</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <script>
+                    var swiper = new Swiper('.main-visual', {
+                        loop : true,
+                        pagination: {
+                            el: '.swiper-pagination',
+                            type: 'fraction',
+                        },
+                        navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                        },
+                    });
+                </script>
+                <!-- swiper js -->
+            </article>
+            <!-- main-visual end; -->
+        </div>
+        <!-- wrap end; -->
     </body>
 </html>

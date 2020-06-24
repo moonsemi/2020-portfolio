@@ -8,3 +8,19 @@
     -webkit-box-sizing: border-box;
 }
 
+@mixin border-radius($br){
+    -webkit-border-radius: $br;
+   -moz-border-radius: $br;
+   border-radius: $br;
+}
+
+@mixin a-tag {
+    display: inline-block;
+    width: 100%; height: 100%;
+}
+
+@mixin top-center{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
