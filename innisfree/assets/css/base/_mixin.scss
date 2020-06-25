@@ -4,6 +4,8 @@
 
 // color!
 $primaryFont: #333333;
+$bbbFont: #bbbbbb;
+$grey6Font: #666666;
 
 
 @mixin border-box{
@@ -21,6 +23,10 @@ $primaryFont: #333333;
 @mixin a-tag {
     display: inline-block;
     width: 100%; height: 100%;
+}
+
+@mixin bigFont{
+    font-family: NanumSquare;
 }
 
 @mixin top-center{
