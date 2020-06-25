@@ -8,6 +8,11 @@ body{
 .main-container{
     position: relative;
     max-width: 1500px; height: 100%;
-    margin: 0 auto; padding: 100px 0;
-    @include border-box;
+    margin: 0 auto;
+}
+
+.main-content-container{
+    position: relative;
+    max-width: 1500px; height: 100%;
+    margin: 110px auto 0;
 }
