@@ -26,7 +26,7 @@ input[type="text"], input[type="password"], select, button, textarea {
 input:focus, select:focus, button:focus, textarea:focus {outline: none; }
 input[type="checkbox"], input[type="radio"] {width: auto;height: auto; }
 input[type="button"], input[type="checkbox"], input[type="radio"]{cursor: pointer; }
-
+input[type="button"], button{cursor: pointer;}
 /* ie */
 /* select*/
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {

@@ -50,4 +50,49 @@
             }
         }
     }
+    .mv-pg-nation{
+        bottom: 40px;
+        span{
+            margin: 0 4px;
+            font-family: Lato;
+        }
+    }
+    .control-area{
+        position: relative; bottom: 220px;
+        height: 52px; padding: 0;
+        .mv-btn-next{
+            left: 55px; right: auto;
+            width: 52px; height: 52px;
+            background-image: url(../images/pg-right-off.png);
+            transition: all 0.2s;
+            &:after{content: '';}
+            &:hover{
+                background-image: url(../images/pg-right-on.png);
+            }
+        }
+        .mv-btn-prev{
+            left: 0; right: auto;
+            width: 52px; height: 52px;
+            background-image: url(../images/pg-left-off.png);
+            transition: all 0.2s;
+            &:after{content: '';}
+            &:hover{
+                background-image: url(../images/pg-left-on.png);
+            }
+        }
+        .control-autoplay{
+            position: absolute; left: 106px; 
+            z-index: 2;
+            height: 100%;
+            button{
+                width: 52px; height: 52px;
+                &.play{
+                    background-image: url(../images/autoplay-play.png);
+                }
+                &.stop{
+                    background-image: url(../images/autoplay-stop.png);
+                }
+            }
+        }
+    }
 }

@@ -2,6 +2,10 @@
 
 // mixin - 자주 쓰는 요소 컴포넌트화
 
+// color!
+$primaryFont: #333333;
+
+
 @mixin border-box{
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -10,8 +14,8 @@
 
 @mixin border-radius($br){
     -webkit-border-radius: $br;
-   -moz-border-radius: $br;
-   border-radius: $br;
+    -moz-border-radius: $br;
+    border-radius: $br;
 }
 
 @mixin a-tag {
