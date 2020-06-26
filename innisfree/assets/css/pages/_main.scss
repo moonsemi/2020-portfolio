@@ -59,3 +59,62 @@
     }     
 }
 // main-article03 end;
+
+.main-article04{
+    .title{
+        margin: 0 0 80px 0;
+        text-align: center;
+        @include bigFont;
+        font-size: 26px;
+    }
+    .sale-ranking{
+        overflow: visible;
+        li{
+            float: left;
+            width: calc(100%/4 - 45px); 
+            // margin-right: 60px;
+            &:last-child{margin-right: 0;}
+            a{
+                position: relative;
+                @include a-tag;
+                .rank-num{
+                    position: relative;
+                    width: 40px; height: 40px;
+                    margin: -20px auto 0;
+                    line-height: 40px; text-align: center;
+                    background: $primaryColor;
+                    color: $whiteColor;
+                    &.first-rank:before{
+                        content: '';
+                        position: absolute; top: -21px;
+                        display: block; 
+                        width: 41px; height: 21px;
+                        text-align: center;
+                        background: url(../images/icon_crown.png) no-repeat;
+                    }
+                }
+                .product-info{
+                    margin-top: 50px;
+                    text-align: center; 
+                    @include bigFont;
+                    .name{
+                        font-size: 17px; color: $grey6Font;
+                    }
+                    .price{
+                        margin: 12px 0;
+                        color: $bbbFont;
+                    }
+                }
+                &:before{
+                    content: '';
+                    position: absolute;
+                    display: inline-block;
+                    width: 100%; height: 100%;
+                    border: 1px solid $bbbFont;
+                    @include border-box;
+                }
+            }
+        }
+    }
+}
+// main-article04 end;

@@ -3,7 +3,9 @@
 // mixin - 자주 쓰는 요소 컴포넌트화
 
 // color!
+$primaryColor: #167a68;
 $primaryFont: #333333;
+$whiteColor: #ffffff;
 $bbbFont: #bbbbbb;
 $grey6Font: #666666;
 
@@ -33,6 +35,12 @@ $grey6Font: #666666;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+}
+
+@mixin left-center{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .main-content .txt-area{
