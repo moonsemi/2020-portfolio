@@ -161,6 +161,7 @@
             }
         }
         .control-area{
+            margin-top: 40px;
             text-align: center; 
             .sr-btn-prev{
                 position: static;
@@ -171,27 +172,38 @@
                 border: 1px solid $bbbFont;
                 @include border-box;
                 &:after{content: '';}
+                &:hover{
+                    background: url(../images/sale-ranking-prev.png) no-repeat center #f3f3f3;
+                }
             }
             .sr-btn-next{
                 position: static;
                 display: inline-block;
                 width: 30px; height: 30px;
-                margin: 0 15px 0 0;
+                margin: 0 0 0 -4px;
                 background: url(../images/sale-ranking-next.png) no-repeat center;
                 border: 1px solid $bbbFont;
                 @include border-box;
                 &:after{content: '';}
+                &:hover{
+                    background: url(../images/sale-ranking-next.png) no-repeat center #f3f3f3;
+                }
             }
             .control-autoplay{
                 display: inline-block;
+                height: 30px; margin-left: -2px;
                 vertical-align: top;
                 button{
-                    width: 12px; height: 12px;
-                    &.play{
-                        background-image: url(../images/sale-ranking-play.png);
+                    width: 30px; height: 100%;
+                    border: 1px solid $bbbFont;
+                    border-left: 0;
+                    @include border-box;
+                    &.sr-play{
+                        display: none;
+                        background: url(../images/sale-ranking-play.png) no-repeat center;
                     }
-                    &.stop{
-                        background-image: url(../images/sale-ranking-stop.png);
+                    &.sr-stop{
+                        background: url(../images/sale-ranking-stop.png) no-repeat center;
                     }
                 }
             }

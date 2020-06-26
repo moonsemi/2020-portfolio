@@ -400,6 +400,7 @@ header {
         visibility: visible;
         opacity: 1; }
   .main-article04 .sale-ranking .control-area {
+    margin-top: 40px;
     text-align: center; }
     .main-article04 .sale-ranking .control-area .sr-btn-prev {
       position: static;
@@ -414,12 +415,14 @@ header {
       -webkit-box-sizing: border-box; }
       .main-article04 .sale-ranking .control-area .sr-btn-prev:after {
         content: ''; }
+      .main-article04 .sale-ranking .control-area .sr-btn-prev:hover {
+        background: url(../images/sale-ranking-prev.png) no-repeat center #f3f3f3; }
     .main-article04 .sale-ranking .control-area .sr-btn-next {
       position: static;
       display: inline-block;
       width: 30px;
       height: 30px;
-      margin: 0 15px 0 0;
+      margin: 0 0 0 -4px;
       background: url(../images/sale-ranking-next.png) no-repeat center;
       border: 1px solid #bbbbbb;
       box-sizing: border-box;
@@ -427,15 +430,25 @@ header {
       -webkit-box-sizing: border-box; }
       .main-article04 .sale-ranking .control-area .sr-btn-next:after {
         content: ''; }
+      .main-article04 .sale-ranking .control-area .sr-btn-next:hover {
+        background: url(../images/sale-ranking-next.png) no-repeat center #f3f3f3; }
     .main-article04 .sale-ranking .control-area .control-autoplay {
       display: inline-block;
+      height: 30px;
+      margin-left: -2px;
       vertical-align: top; }
       .main-article04 .sale-ranking .control-area .control-autoplay button {
-        width: 12px;
-        height: 12px; }
-        .main-article04 .sale-ranking .control-area .control-autoplay button.play {
-          background-image: url(../images/sale-ranking-play.png); }
-        .main-article04 .sale-ranking .control-area .control-autoplay button.stop {
-          background-image: url(../images/sale-ranking-stop.png); }
+        width: 30px;
+        height: 100%;
+        border: 1px solid #bbbbbb;
+        border-left: 0;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box; }
+        .main-article04 .sale-ranking .control-area .control-autoplay button.sr-play {
+          display: none;
+          background: url(../images/sale-ranking-play.png) no-repeat center; }
+        .main-article04 .sale-ranking .control-area .control-autoplay button.sr-stop {
+          background: url(../images/sale-ranking-stop.png) no-repeat center; }
 
 /*# sourceMappingURL=style.css.map */
