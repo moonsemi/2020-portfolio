@@ -124,7 +124,10 @@ body {
   position: relative;
   max-width: 1500px;
   height: 100%;
-  margin: 110px auto 0; }
+  margin: 150px auto 0; }
+
+footer {
+  margin: 100px 0; }
 
 header {
   line-height: 95px; }
@@ -176,67 +179,6 @@ header {
     margin-bottom: 40px; }
     .main-article03 .txt-area li:last-child {
       margin-right: 0; }
-
-.main-article04 .title {
-  margin: 0 0 50px 0;
-  text-align: center;
-  font-family: NanumSquare;
-  font-size: 26px; }
-.main-article04 .sale-ranking {
-  padding-top: 42px; }
-  .main-article04 .sale-ranking li {
-    float: left;
-    width: calc(100%/4 - 45px); }
-    .main-article04 .sale-ranking li:last-child {
-      margin-right: 0; }
-    .main-article04 .sale-ranking li a {
-      position: relative;
-      display: inline-block;
-      width: 100%;
-      height: 100%; }
-      .main-article04 .sale-ranking li a .rank-num {
-        position: relative;
-        width: 40px;
-        height: 40px;
-        margin: -20px auto 0;
-        line-height: 40px;
-        text-align: center;
-        background: #167a68;
-        color: #ffffff; }
-        .main-article04 .sale-ranking li a .rank-num.first-rank:before {
-          content: '';
-          position: absolute;
-          top: -21px;
-          display: block;
-          width: 41px;
-          height: 21px;
-          text-align: center;
-          background: url(../images/icon_crown.png) no-repeat; }
-      .main-article04 .sale-ranking li a .product-info {
-        margin-top: 50px;
-        text-align: center;
-        font-family: NanumSquare; }
-        .main-article04 .sale-ranking li a .product-info .name {
-          font-size: 17px;
-          color: #666666; }
-        .main-article04 .sale-ranking li a .product-info .price {
-          margin: 12px 0;
-          color: #bbbbbb; }
-      .main-article04 .sale-ranking li a:before {
-        content: '';
-        position: absolute;
-        visibility: hidden;
-        opacity: 0;
-        width: 100%;
-        height: 100%;
-        border: 1px solid #bbbbbb;
-        box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-        transition: visibility 0s, opacity 0.3s linear; }
-      .main-article04 .sale-ranking li a:hover:before {
-        visibility: visible;
-        opacity: 1; }
 
 .main-visual.swiper-container {
   width: 100%;
@@ -450,5 +392,119 @@ header {
           background: url(../images/sale-ranking-play.png) no-repeat center; }
         .main-article04 .sale-ranking .control-area .control-autoplay button.sr-stop {
           background: url(../images/sale-ranking-stop.png) no-repeat center; }
+
+.main-article05 .title {
+  margin: 150px 0 40px 0;
+  text-align: center;
+  font-family: NanumSquare;
+  font-size: 26px; }
+.main-article05 .bg-area {
+  padding: 65px 0 50px;
+  background-size: 100%;
+  background-repeat: no-repeat; }
+.main-article05 .main-content-container {
+  margin: 0 auto; }
+.main-article05 .best-review-area {
+  padding: 0 0 35px 0;
+  text-align: center; }
+  .main-article05 .best-review-area .best-review-txt {
+    display: inline-block;
+    background-image: url(../images/best-review-txt-bg-left.png), url(../images/best-review-txt-bg-right.png);
+    background-repeat: no-repeat;
+    background-position: left top, right bottom;
+    vertical-align: top;
+    font-family: NanumSquare; }
+    .main-article05 .best-review-area .best-review-txt .content-txt {
+      margin: 45px 45px 45px 65px;
+      color: #666666;
+      font-size: 23px; }
+    .main-article05 .best-review-area .best-review-txt .name {
+      margin: 0 45px 8px 0;
+      color: #999999;
+      font-size: 17px; }
+    .main-article05 .best-review-area .best-review-txt .user {
+      margin: 0 45px 45px 0;
+      color: #999999;
+      font-size: 17px; }
+  .main-article05 .best-review-area .best-review-img {
+    display: inline-block;
+    margin-left: 70px;
+    border: 2px solid #ffffff;
+    vertical-align: top;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box; }
+.main-article05 .review-slide {
+  padding: 0 35px; }
+  .main-article05 .review-slide a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    transition: all 0.2s; }
+    .main-article05 .review-slide a .img-side {
+      float: left;
+      width: 120px;
+      background: #f3f3f3; }
+    .main-article05 .review-slide a .txt-side {
+      float: left;
+      width: calc(100% - 120px);
+      padding: 20px 35px;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box; }
+      .main-article05 .review-slide a .txt-side .name {
+        color: #666666; }
+      .main-article05 .review-slide a .txt-side .content-txt {
+        margin: 6px 0 12px;
+        color: #999999;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap; }
+      .main-article05 .review-slide a .txt-side .user-date span {
+        color: #999999; }
+        .main-article05 .review-slide a .txt-side .user-date span:first-child {
+          margin-right: 12px; }
+        .main-article05 .review-slide a .txt-side .user-date span:last-child {
+          font-family: Lato; }
+    .main-article05 .review-slide a:hover {
+      margin-top: -2px;
+      -webkit-box-shadow: 0px 0px 10px 0px #b4b4b4;
+      -moz-box-shadow: 0px 0px 10px 0px #b4b4b4;
+      box-shadow: 0px 0px 10px 0px #b4b4b4; }
+  .main-article05 .review-slide .br-btn-prev {
+    left: 0;
+    width: 10px;
+    height: 16px;
+    margin-top: -8px;
+    background: url(../images/sale-ranking-prev.png) no-repeat center; }
+    .main-article05 .review-slide .br-btn-prev:after {
+      content: ''; }
+  .main-article05 .review-slide .br-btn-next {
+    right: 0;
+    width: 10px;
+    height: 16px;
+    margin-top: -8px;
+    background: url(../images/sale-ranking-next.png) no-repeat center; }
+    .main-article05 .review-slide .br-btn-next:after {
+      content: ''; }
+.main-article05 .view-more {
+  display: block;
+  width: 170px;
+  margin: 35px auto 0; }
+  .main-article05 .view-more a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    line-height: 45px;
+    border: 1px solid #999999;
+    color: #666666;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box; }
+  .main-article05 .view-more:hover a {
+    background: #999999;
+    color: #ffffff; }
 
 /*# sourceMappingURL=style.css.map */

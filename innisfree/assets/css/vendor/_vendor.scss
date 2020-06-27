@@ -211,3 +211,125 @@
     }
 }
 // main-article04 end;
+
+.main-article05{
+    .title{
+        margin: 150px 0 40px 0;
+        text-align: center;
+        @include bigFont;
+        font-size: 26px;
+    }
+    .bg-area{
+        padding: 65px 0 50px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .main-content-container{margin: 0 auto;}
+    .best-review-area{
+        padding: 0 0 35px 0;
+        text-align: center;
+        .best-review-txt{
+            display: inline-block;
+            background-image: url(../images/best-review-txt-bg-left.png), url(../images/best-review-txt-bg-right.png);
+            background-repeat: no-repeat;
+            background-position: left top, right bottom;
+            vertical-align: top;
+            @include bigFont;
+            .content-txt{
+                margin: 45px 45px 45px 65px;
+                color: $grey6Font; font-size: 23px;
+            }
+            .name{
+                margin: 0 45px 8px 0;
+                color: $grey9Font; font-size: 17px;
+            }
+            .user{
+                margin: 0 45px 45px 0;
+                color: $grey9Font; font-size: 17px;
+            }
+        }
+        .best-review-img{
+            display: inline-block;
+            margin-left: 70px;
+            border: 2px solid $whiteColor;
+            vertical-align: top;
+            @include border-box;
+        }
+    }
+    .review-slide{
+        padding: 0 35px;
+        a{
+            @include a-tag;
+            background: $whiteColor;
+            transition: all 0.2s;
+            .img-side{
+                float: left;
+                width: 120px;
+                background: #f3f3f3;
+            }            
+            .txt-side{
+                float: left;
+                width: calc(100% - 120px);
+                padding: 20px 35px;
+                @include border-box;
+                .name{
+                    color: $grey6Font;
+                }
+                .content-txt{
+                    margin: 6px 0 12px;
+                    color: $grey9Font;
+                    @include ellipse;
+                }
+                .user-date{
+                    span{
+                        color: $grey9Font;
+                        &:first-child{
+                            margin-right: 12px;
+                        }
+                        &:last-child{
+                            font-family: Lato;
+                        }
+                    }
+                }
+            }
+            &:hover{
+                margin-top: -2px;
+                -webkit-box-shadow: 0px 0px 10px 0px rgba(180,180,180,1);
+                -moz-box-shadow: 0px 0px 10px 0px rgba(180,180,180,1);
+                box-shadow: 0px 0px 10px 0px rgba(180,180,180,1);
+            }
+        }
+        .br-btn-prev{
+            left: 0;
+            width: 10px; height: 16px;
+            margin-top: -8px;
+            background: url(../images/sale-ranking-prev.png) no-repeat center;
+            &:after{content: '';}
+        }
+        .br-btn-next{
+            right: 0;
+            width: 10px; height: 16px;
+            margin-top: -8px;
+            background: url(../images/sale-ranking-next.png) no-repeat center;
+            &:after{content: '';}
+        }
+    }
+    .view-more{
+        display: block;
+        width: 170px;
+        margin: 35px auto 0;
+        a{
+            @include a-tag;
+            line-height: 45px;
+            border: 1px solid $grey9Font;
+            color: $grey6Font;
+            transition: all 0.3s;
+            @include border-box;
+        }
+        &:hover a{
+            background: $grey9Font;
+            color: $whiteColor;
+        }
+    }
+}
+// main-article05 end;

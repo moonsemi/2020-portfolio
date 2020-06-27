@@ -297,12 +297,95 @@
             </article>
             <!-- main-article04 end; -->
             <div class="main-content main-article05">
-                <div class="main-content-container">
-                    
+                <p class="title">베스트 후기</p>
+                <div class="bg-area" style="background-image: url(../assets/images/main-article05-bg.png);">
+                    <div class="main-content-container">
+                        <div class="best-review-area">
+                            <div class="best-review-txt">
+                                <p class="content-txt">토닉워터 로션 사용하고나서 피부가 많이 좋아졌어요.</p>
+                                <p class="name">- <span>토닉워터 로션</span> -</p>
+                                <p class="user">민윤기<span>(비회원)</span></p>
+                            </div>
+                            <div class="best-review-img"><img src="../assets/images/best-review-img.png" alt="제품 이미지"></div>
+                        </div>
+                        <div class="review-slide swiper-container">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide">
+                                    <a href="javascript:;" class="clearfix">
+                                        <span class="img-side"><img src="../assets/images/main-article04-img01.png" alt="제품이미지"></span>
+                                        <div class="txt-side">
+                                            <p class="name">토닉워터 로션</p>
+                                            <p class="content-txt">패키지가 독특해서 처음엔 화장품 아닌 줄 알았어요. 패키지만 예쁜게 아니라 성분도 착하고</p>
+                                            <p class="user-date">
+                                                <span>김수민</span><span>20.06.01</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="javascript:;" class="clearfix">
+                                        <span class="img-side"><img src="../assets/images/main-article04-img02.png" alt="제품이미지"></span>
+                                        <div class="txt-side">
+                                            <p class="name">토닉워터 스킨</p>
+                                            <p class="content-txt">패키지가 독특해서 처음엔 화장품 아닌 줄 알았어요. 패키지만 예쁜게 아니라 성분도 착하고</p>
+                                            <p class="user-date">
+                                                <span>김수민</span><span>20.06.01</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="javascript:;" class="clearfix">
+                                        <span class="img-side"><img src="../assets/images/main-article04-img03.png" alt="제품이미지"></span>
+                                        <div class="txt-side">
+                                            <p class="name">토닉워터 에센스</p>
+                                            <p class="content-txt">패키지가 독특해서 처음엔 화장품 아닌 줄 알았어요. 패키지만 예쁜게 아니라 성분도 착하고</p>
+                                            <p class="user-date">
+                                                <span>김수민</span><span>20.06.01</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="javascript:;" class="clearfix">
+                                        <span class="img-side"><img src="../assets/images/main-article04-img04.png" alt="제품이미지"></span>
+                                        <div class="txt-side">
+                                            <p class="name">토닉워터 영양크림</p>
+                                            <p class="content-txt">패키지가 독특해서 처음엔 화장품 아닌 줄 알았어요. 패키지만 예쁜게 아니라 성분도 착하고</p>
+                                            <p class="user-date">
+                                                <span>김수민</span><span>20.06.01</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- Add Arrows -->
+                            <button type="button" class="swiper-button-prev br-btn-prev"></button>                
+                            <button type="button" class="swiper-button-next br-btn-next"></button>
+                        </div>
+                        <button class="view-more"><a href="javascript:;">+ 더보기</a></button>
+                    </div>
                 </div>
+                <script>
+                    let reviewSwiper = new Swiper('.review-slide', {
+                        slidesPerView: 2,
+                        spaceBetween: 35,
+                        loop : true,
+                        navigation: {
+                            nextEl: '.br-btn-next',
+                            prevEl: '.br-btn-prev',
+                        }
+                    });
+                    // reviewSwiper js
+                </script>
             </div>
             <!-- main-article05 end; -->
         </div>
         <!-- wrap end; -->
+        <footer>
+            <div class="main-container">
+
+            </div>
+        </footer>
     </body>
 </html>

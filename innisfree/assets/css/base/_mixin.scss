@@ -8,6 +8,7 @@ $primaryFont: #333333;
 $whiteColor: #ffffff;
 $bbbFont: #bbbbbb;
 $grey6Font: #666666;
+$grey9Font: #999999;
 
 
 @mixin border-box{
@@ -41,6 +42,12 @@ $grey6Font: #666666;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+}
+
+@mixin ellipse{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .main-content .txt-area{
