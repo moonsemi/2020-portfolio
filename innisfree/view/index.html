@@ -20,10 +20,28 @@
             <div class="main-container clearfix">
                 <h1 class="hidden">innisfree</h1>
                 <div class="logo"><a href="javascript:;"><img src="../assets/images/logo.png" alt="이니스프리 로고"></a></div>
-                <div class="pc-lnb">
-                    <a href="javascript:;"><img src="../assets/images/pc-lnb-btn.png" alt="피씨 메뉴 아이콘"></a>
-                </div>
+                <button type="button" class="pc-lnb-menu" onclick="pcLnbToggle()">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
             </div>
+            <div class="pc-lnb-open">
+                <ul class="main-container">
+                    <li><a href="javascript:;">Home</a></li>
+                    <li><a href="javascript:;">About</a></li>
+                    <li><a href="javascript:;">Review</a></li>
+                    <li><a href="javascript:;">Product</a></li>
+                    <li><a href="javascript:;">Customer</a></li>
+                </ul>
+            </div>
+            <script>
+                let hamMenu = document.querySelector(".pc-lnb-menu");
+                let pcLnbToggleClass = "active";
+                function pcLnbToggle(){
+                    hamMenu.classList.toggle(pcLnbToggleClass);
+                }
+            </script>
         </header>
         <!-- header end; -->
 
@@ -296,7 +314,7 @@
                 </script>
             </article>
             <!-- main-article04 end; -->
-            <div class="main-content main-article05">
+            <article class="main-content main-article05">
                 <p class="title">베스트 후기</p>
                 <div class="bg-area" style="background-image: url(../assets/images/main-article05-bg.png);">
                     <div class="main-content-container">
@@ -378,9 +396,9 @@
                     });
                     // reviewSwiper js
                 </script>
-            </div>
+            </article>
             <!-- main-article05 end; -->
-        </div>
+        </section>
         <!-- wrap end; -->
         <footer>
             <div class="top-side">
@@ -405,5 +423,6 @@
                 </div>
             </div>
         </footer>
+        <!-- footer end; -->
     </body>
 </html>

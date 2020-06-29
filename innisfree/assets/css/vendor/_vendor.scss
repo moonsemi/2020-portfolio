@@ -61,11 +61,12 @@
         }
     }
     .control-area{
-        position: relative; bottom: 220px;
-        height: 52px; margin: 0 auto;
+        bottom: 220px;
+        height: 52px; 
         .mv-btn-next{
-            left: 55px; right: auto;
+            left: 55px; right: auto; top: 0;
             width: 52px; height: 52px;
+            margin-top:0;
             background-image: url(../images/pg-right-off.png);
             transition: all 0.2s;
             &:after{content: '';}
@@ -74,8 +75,9 @@
             }
         }
         .mv-btn-prev{
-            left: 0; right: auto;
+            left: 0; right: auto; top: 0;
             width: 52px; height: 52px;
+            margin-top:0;
             background-image: url(../images/pg-left-off.png);
             transition: all 0.2s;
             &:after{content: '';}

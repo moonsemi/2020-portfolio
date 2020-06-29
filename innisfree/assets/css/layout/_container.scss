@@ -5,6 +5,12 @@ body{
     font-family: Lato, NanumGothic, NanumSquare, san-serif;
 }
 
+body.band{
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
 .main-container{
     position: relative;
     max-width: 1500px; height: 100%;
