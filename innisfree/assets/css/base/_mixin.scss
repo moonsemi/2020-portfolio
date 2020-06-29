@@ -50,6 +50,13 @@ $grey9Font: #999999;
     white-space: nowrap;
 }
 
+@mixin breakPoint($maxPoint: null, $minPoint: 0){
+    @media all and (min-width: #{$minPoint}) and (max-width: #{$maxPoint}){
+        @content;
+    }
+}
+
+
 .main-content .txt-area{
     float: left;
     margin-left: 10%; margin-top: 13%;
