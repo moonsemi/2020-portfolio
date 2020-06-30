@@ -150,7 +150,7 @@ body.band {
       margin: 110px 24px; } }
 
 footer {
-  margin: 100px 0; }
+  margin: 100px 0 0 0; }
   footer .top-side {
     line-height: 45px;
     border-top: 1px solid #bbbbbb;
@@ -176,9 +176,12 @@ footer {
           footer .top-side li.privacy-policy a:after {
             display: none; }
   footer .bottom-side {
-    margin-top: 45px;
+    margin: 45px auto;
     font-size: 14px;
     color: #999999; }
+    @media all and (min-width: 0) and (max-width: 1500px) {
+      footer .bottom-side {
+        margin: 45px 24px; } }
     footer .bottom-side .footer-info01 {
       float: left; }
       footer .bottom-side .footer-info01 p {
@@ -259,6 +262,7 @@ header {
         line-height: 1; }
         header .pc-lnb-open ul li a {
           position: relative;
+          display: inline-block;
           font-size: 30px;
           color: #ffffff; }
           header .pc-lnb-open ul li a:after {
@@ -273,6 +277,13 @@ header {
             transition: width 0.3s; }
           header .pc-lnb-open ul li a:hover:after {
             width: 100%; }
+      @media all and (min-width: 0) and (max-width: 720px) {
+        header .pc-lnb-open ul {
+          margin: 100px auto 0; }
+          header .pc-lnb-open ul li {
+            margin-bottom: 40px; }
+            header .pc-lnb-open ul li a {
+              font-size: 26px; } }
 
 .main-content {
   background-size: 100%;
@@ -402,7 +413,8 @@ header {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        left: 0; }
+        left: 0;
+        width: 100%; }
         .main-visual.swiper-container .swiper-slide .main-container .txt-area .sub-title {
           display: inline-block;
           line-height: 30px;
@@ -431,9 +443,17 @@ header {
             line-height: 45px;
             border: 1px solid #666666;
             color: #666666;
+            transition: all 0.3s;
             box-sizing: border-box;
             -moz-box-sizing: border-box;
             -webkit-box-sizing: border-box; }
+          .main-visual.swiper-container .swiper-slide .main-container .txt-area .view-btn:hover a {
+            background: #999999;
+            color: #ffffff; }
+            @media all and (min-width: 0) and (max-width: 992px) {
+              .main-visual.swiper-container .swiper-slide .main-container .txt-area .view-btn:hover a {
+                background: transparent;
+                color: #666666; } }
         @media all and (min-width: 0) and (max-width: 992px) {
           .main-visual.swiper-container .swiper-slide .main-container .txt-area {
             left: 50%;
@@ -453,15 +473,26 @@ header {
               margin: 0 auto; } }
         @media all and (min-width: 0) and (max-width: 720px) {
           .main-visual.swiper-container .swiper-slide .main-container .txt-area {
-            bottom: 20%; }
+            bottom: 13%; }
             .main-visual.swiper-container .swiper-slide .main-container .txt-area .title {
-              margin: 20px 0 28px;
-              font-size: 30px; } }
+              margin: 12px 0 20px;
+              font-size: 28px; }
+            .main-visual.swiper-container .swiper-slide .main-container .txt-area .view-btn a {
+              line-height: 35px; } }
+        @media all and (min-width: 0) and (max-width: 480px) {
+          .main-visual.swiper-container .swiper-slide .main-container .txt-area .title {
+            margin: 10px 0 18px;
+            font-size: 21px;
+            line-height: 28px; } }
   .main-visual.swiper-container .mv-pg-nation {
     bottom: 5%; }
     @media all and (min-width: 0) and (max-width: 992px) {
       .main-visual.swiper-container .mv-pg-nation {
-        bottom: 1%; } }
+        bottom: auto;
+        top: 5%; } }
+    @media all and (min-width: 0) and (max-width: 992px) {
+      .main-visual.swiper-container .mv-pg-nation {
+        top: 3%; } }
     .main-visual.swiper-container .mv-pg-nation span {
       margin: 0 4px;
       font-family: Lato; }
@@ -485,9 +516,11 @@ header {
           bottom: 1%; } }
       @media all and (min-width: 0) and (max-width: 992px) {
         .main-visual.swiper-container .main-container .control-area {
-          bottom: 5%;
           left: 50%;
           transform: translateX(-50%); } }
+      @media all and (min-width: 0) and (max-width: 480px) {
+        .main-visual.swiper-container .main-container .control-area {
+          bottom: 0; } }
       .main-visual.swiper-container .main-container .control-area .mv-btn-next {
         left: 55px;
         right: auto;
@@ -590,6 +623,10 @@ header {
       .main-article04 .sale-ranking li a:hover:before {
         visibility: visible;
         opacity: 1; }
+        @media all and (min-width: 0) and (max-width: 992px) {
+          .main-article04 .sale-ranking li a:hover:before {
+            visibility: hidden;
+            opacity: 0; } }
   .main-article04 .sale-ranking .control-area {
     margin-top: 40px;
     text-align: center; }
@@ -626,7 +663,7 @@ header {
     .main-article04 .sale-ranking .control-area .control-autoplay {
       display: inline-block;
       height: 30px;
-      margin-left: -2px;
+      margin-left: -3px;
       vertical-align: top; }
       .main-article04 .sale-ranking .control-area .control-autoplay button {
         width: 30px;
@@ -673,7 +710,8 @@ header {
       line-height: 35px; }
       @media all and (min-width: 0) and (max-width: 480px) {
         .main-article05 .best-review-area .best-review-txt .content-txt {
-          font-size: 20px;
+          margin: 45px 45px 25px 65px;
+          font-size: 19px;
           line-height: 30px; } }
     .main-article05 .best-review-area .best-review-txt .name {
       margin: 0 0 8px 0;
@@ -747,6 +785,12 @@ header {
       -webkit-box-shadow: 0px 0px 10px 0px #b4b4b4;
       -moz-box-shadow: 0px 0px 10px 0px #b4b4b4;
       box-shadow: 0px 0px 10px 0px #b4b4b4; }
+      @media all and (min-width: 0) and (max-width: 992px) {
+        .main-article05 .review-slide a:hover {
+          margin-top: 0px;
+          -webkit-box-shadow: 0px 0px 0 0px white;
+          -moz-box-shadow: 0px 0px 0 0px white;
+          box-shadow: 0px 0px 0 0px white; } }
   .main-article05 .review-slide .br-btn-prev {
     left: 0;
     width: 10px;

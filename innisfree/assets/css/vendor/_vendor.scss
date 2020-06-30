@@ -62,6 +62,7 @@
             }
             .txt-area{
                 @include top-center; left: 0;
+                width: 100%;
                 .sub-title{
                     display: inline-block;
                     line-height: 30px;
@@ -85,7 +86,16 @@
                         line-height: 45px;
                         border: 1px solid $grey6Font;
                         color: $grey6Font;
+                        transition: all 0.3s;
                         @include border-box;
+                    }
+                    &:hover a{
+                        background: $grey9Font;
+                        color: $whiteColor;
+                        @include breakPoint(992px){
+                            background: transparent;
+                            color: $grey6Font;
+                        }
                     }
                 }
                 @include breakPoint(992px){
@@ -108,10 +118,19 @@
 
                 }
                 @include breakPoint(720px){
-                    bottom: 20%;
+                    bottom: 13%;
                     .title{
-                        margin: 20px 0 28px;
-                        font-size: 30px; 
+                        margin: 12px 0 20px;
+                        font-size: 28px; 
+                    }
+                    .view-btn a{
+                        line-height: 35px;
+                    }
+                }
+                @include breakPoint(480px){
+                    .title{
+                        margin: 10px 0 18px;
+                        font-size: 21px; line-height: 28px;
                     }
                 }
             }
@@ -120,7 +139,10 @@
     .mv-pg-nation{
         bottom: 5%;
         @include breakPoint(992px){
-            bottom: 1%;
+            bottom: auto; top: 5%;
+        }
+        @include breakPoint(992px){
+            top: 3%;
         }
         span{
             margin: 0 4px;
@@ -143,8 +165,11 @@
                 bottom: 1%;
             }
             @include breakPoint(992px){
-                bottom: 5%; left: 50%; 
+                left: 50%; 
                 transform: translateX(-50%);
+            }
+            @include breakPoint(480px){
+                bottom: 0;
             }
             .mv-btn-next{
                 left: 55px; right: auto; top: 0;
@@ -245,7 +270,9 @@
                 }
                 &:hover:before{
                     visibility: visible; opacity: 1;
-                    
+                    @include breakPoint(992px){
+                        visibility: hidden; opacity: 0;
+                    }
                 }
             }
         }
@@ -280,7 +307,7 @@
             }
             .control-autoplay{
                 display: inline-block;
-                height: 30px; margin-left: -2px;
+                height: 30px; margin-left: -3px;
                 vertical-align: top;
                 button{
                     width: 30px; height: 100%;
@@ -334,8 +361,8 @@
                 color: $grey6Font; font-size: 23px;
                 line-height: 35px;
                 @include breakPoint(480px){
-                    font-size: 20px;
-                    line-height: 30px;
+                    margin: 45px 45px 25px 65px;
+                    font-size: 19px; line-height: 30px;
                 }
             }
             .name{
@@ -420,6 +447,12 @@
                 -webkit-box-shadow: 0px 0px 10px 0px rgba(180,180,180,1);
                 -moz-box-shadow: 0px 0px 10px 0px rgba(180,180,180,1);
                 box-shadow: 0px 0px 10px 0px rgba(180,180,180,1);
+                @include breakPoint(992px){
+                    margin-top: 0px;
+                    -webkit-box-shadow: 0px 0px 0 0px rgba(255,255,255,1);
+                    -moz-box-shadow: 0px 0px 0 0px rgba(125580,255,255,1);
+                    box-shadow: 0px 0px 0 0px rgba(255,255,255,1);
+                }
             }
         }
         .br-btn-prev{

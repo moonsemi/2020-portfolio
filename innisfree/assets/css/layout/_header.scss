@@ -55,6 +55,7 @@ header{
                 line-height: 1;
                 a{
                     position: relative;
+                    display: inline-block;
                     font-size: 30px; color: $whiteColor;
                     &:after{
                         content: '';
@@ -66,6 +67,15 @@ header{
                     }
                     &:hover:after{
                         width: 100%;
+                    }
+                }
+            }
+            @include breakPoint(720px){
+                margin: 100px auto 0;
+                li{
+                    margin-bottom: 40px;
+                    a{
+                        font-size: 26px;
                     }
                 }
             }
