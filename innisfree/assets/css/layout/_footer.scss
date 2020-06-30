@@ -35,7 +35,12 @@ footer{
         .footer-info01{
             float: left;
             p{               
-                line-height: 30px; font-family: Lato;
+                margin-bottom: 5px; 
+                font-family: Lato;
+                &:last-child{margin-bottom: 0;}
+            }
+            @include breakPoint(980px){
+                float: none;
             }
         }
         .footer-info02{
@@ -47,6 +52,13 @@ footer{
                     display: inline-block;
                     margin-right: 5px;
                     &:last-child{margin-right: 0;}
+                }
+            }
+            @include breakPoint(980px){
+                float: none;
+                .sns-area{
+                    margin: 25px 0 20px;
+                    text-align: left;
                 }
             }
         }

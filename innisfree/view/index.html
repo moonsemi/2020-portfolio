@@ -9,7 +9,7 @@
         <!-- swiperJs css -->
         <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
         <!-- swiperJs js -->
-        <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+        <script src="../assets/js/swiper.min.js"></script>
         <!-- js 기술 -->
         <script src="../assets/js/jquery-2.2.4.min.js"></script>
         <script defer src="../assets/js/script.js"></script>
@@ -62,7 +62,7 @@
                             <div class="txt-area">
                                 <p class="sub-title">바디</p>
                                 <p class="title">
-                                    건조한 - 피부 <br>
+                                    건조한 피부 <br>
                                     촉촉하게 보습
                                 </p>
                                 <p class="view-btn"><a href="javascript:;">자세히보기</a></p>
@@ -75,8 +75,7 @@
                                 <p class="sub-title">SNS대란</p>
                                 <p class="title">
                                     화이트 데이, <br>
-                                    토닉워터로 마음을 <br>
-                                    전하세요
+                                    선물로 딱 <br>     
                                 </p>
                                 <p class="view-btn"><a href="javascript:;">자세히보기</a></p>
                             </div>
@@ -124,7 +123,7 @@
                 </script>
             </article>
             <!-- main-visual end; -->
-            <article class="main-content main-article01" style="background-image: url(../assets/images/main-article01-bg.png);">
+            <article class="main-content main-article01">
                 <div class="main-content-container clearfix">
                     <div class="img-area">
                         <img src="../assets/images/main-article01-img.png" alt="제품 이미지">
@@ -134,7 +133,7 @@
                         <p class="title">제주 암반수로 매끈하게</p>
                         <p class="content">
                             깨끗한 제주 암반수를 그대로 담은 고농축 에센스, <br>
-                            변화를 느껴보세
+                            변화를 느껴보세요.
                         </p>                        
                         <p class="view-detail"><a href="javascript:;">자세히보기</a></p>
                     </div>
@@ -154,34 +153,34 @@
                     </div>
                     <ul class="img-area clearfix">
                         <li class="flip-card-inner">
-                            <a href="javascript;;" class="flip-card-front">
+                            <a href="javascript:;" class="flip-card-front">
                                 <img src="../assets/images/main-article02-img01.png" alt="립스틱 제품 이미지">
                             </a>
-                            <a href="javascript;;" class="flip-card-back">
+                            <a href="javascript:;" class="flip-card-back">
                                 <img src="../assets/images/main-article02-img01-on.png" alt="립스틱 제품 이미지">
                             </a>   
                         </li>
                         <li class="flip-card-inner">
-                            <a href="javascript;;" class="flip-card-front">
+                            <a href="javascript:;" class="flip-card-front">
                                 <img src="../assets/images/main-article02-img02.png" alt="립스틱 제품 이미지">
                             </a>
-                            <a href="javascript;;" class="flip-card-back">
+                            <a href="javascript:;" class="flip-card-back">
                                 <img src="../assets/images/main-article02-img02-on.png" alt="립스틱 제품 이미지">
                             </a>   
                         </li>
                         <li class="flip-card-inner">
-                            <a href="javascript;;" class="flip-card-front">
+                            <a href="javascript:;" class="flip-card-front">
                                 <img src="../assets/images/main-article02-img03.png" alt="립스틱 제품 이미지">
                             </a>
-                            <a href="javascript;;" class="flip-card-back">
+                            <a href="javascript:;" class="flip-card-back">
                                 <img src="../assets/images/main-article02-img03-on.png" alt="립스틱 제품 이미지">
                             </a>   
                         </li>
                         <li class="flip-card-inner">
-                            <a href="javascript;;" class="flip-card-front">
+                            <a href="javascript:;" class="flip-card-front">
                                 <img src="../assets/images/main-article02-img04.png" alt="립스틱 제품 이미지">
                             </a>
-                            <a href="javascript;;" class="flip-card-back">
+                            <a href="javascript:;" class="flip-card-back">
                                 <img src="../assets/images/main-article02-img04-on.png" alt="립스틱 제품 이미지">
                             </a>   
                         </li>
@@ -189,7 +188,7 @@
                 </div>
             </article>
             <!-- main-article02 end; -->
-            <article class="main-content main-article03" style="background-image: url(../assets/images/main-article03-bg.png);">
+            <article class="main-content main-article03">
                 <div class="main-content-container clearfix">
                     <div class="txt-area">
                         <p class="sub-txt">heal your skin</p>
@@ -297,6 +296,17 @@
                         navigation: {
                             nextEl: '.sr-btn-next',
                             prevEl: '.sr-btn-prev',
+                        },
+                        breakpoints: {
+                            992: {
+                                slidesPerView: 3,
+                            },
+                            720: {
+                                slidesPerView: 2,
+                            },
+                            480: {
+                                slidesPerView: 1,
+                            },
                         }
                     });
                     // saleRankingSwiper js
@@ -394,6 +404,11 @@
                         navigation: {
                             nextEl: '.br-btn-next',
                             prevEl: '.br-btn-prev',
+                        },
+                        breakpoints: {                            
+                            980: {
+                                slidesPerView: 1
+                            },
                         }
                     });
                     // reviewSwiper js

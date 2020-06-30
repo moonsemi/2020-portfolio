@@ -7,8 +7,16 @@
 // main-content common end;
 
 .main-article01{
+    background-image: url(../images/main-article01-bg.png);
+    @include breakPoint(992px){
+        background-image: url(../images/tab-main-article01-bg.png);
+    }
     .img-area{
         float: left;
+        @include breakPoint(1065px){
+            float: none;
+            text-align: center;
+        }
     }
 }
 // main-article01 end;
@@ -20,7 +28,7 @@
     }
     .img-area{
         margin-top: 45px;
-        .flip-card-inner{
+        li{
             position: relative;
             float: left; 
             width: 205px; height: 205px;
@@ -40,11 +48,24 @@
                 }
             }
         }
+        @include breakPoint(980px){
+            li{
+                float: none; 
+                margin: 0 auto 40px;
+                &:last-child{
+                    margin: 0 auto;
+                }
+            }
+        }
     }
 }
 // main-article02 end;
 
 .main-article03{
+    background-image: url(../images/main-article03-bg.png);
+    @include breakPoint(720px){
+        background-image: url(../images/mob-main-article03-bg.png);
+    }
     .txt-area{
         float: right;
         margin-right: 8%; margin-left: 0;
@@ -55,6 +76,13 @@
             float: left;
             margin-right: 40px; margin-bottom: 40px;
             &:last-child{margin-right: 0;}
+        }
+        @include breakPoint(720px){
+            float: none;
+            margin: 0; padding-top: 52%;
+            ul{
+                width: 335px; margin: 0 auto;
+            }
         }
     }     
 }
