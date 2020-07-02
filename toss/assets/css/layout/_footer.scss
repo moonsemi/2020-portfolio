@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+.footer{
+    padding: 50px 0; background: $lGreyBorder;    
+    text-align: center;
+    color: $nineFontcolor; font-weight: 700; font-family: NanumGothic;
+    .f-logo{
+        margin-bottom: 50px;
+    } 
+    .f-info1{
+        margin-bottom: 40px;
+        li{
+            display: inline-block; margin-right: 15px;
+            &:last-child{margin-right: 0;}
+            a{
+                color: $nineFontcolor;
+            }
+        }
+    }
+    .f-info2{
+        p{           
+            line-height: 27px; 
+            @include breakPoint(720px){
+                display: block;
+            }
+            @include breakPoint(480px){
+                letter-spacing: -0.025em;
+            }
+            &.copy{margin-top: 20px; font-size: 16px;
+                @include breakPoint(480px){
+                    font-size: 15px;
+                }
+            }       
+            a{
+                color: $primaryborder;
+            }
+            span{
+                @include breakPoint(680px){
+                    display: block;
+                    &.bar{display: none;}
+                }
+            }
+        } 
+    }
+}

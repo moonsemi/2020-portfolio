@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+body.band{
+    position: absolute;
+    width: 100%; height: 100%;
+    overflow: hidden;
+}
+
+
+.quickmenu{
+    position: fixed;
+    bottom: 30px; right: calc(100%/29);
+    z-index: 1;
+    @include breakPoint(992px){
+        right: 24px;
+    }
+    @include breakPoint(720px){
+        right: 16px;
+    }
+    .totop-btn{
+        display: none;
+        width: 60px; height: 60px;
+        opacity: 0.8;
+        @include breakPoint(992px){
+            width: 50px; height: 50px;
+        }
+    }
+    .gohome-btn{
+        width: 60px; height: 60px;
+        margin-top: 9px;
+        opacity: 0.8;
+        @include breakPoint(992px){
+            width: 50px; height: 50px;
+        }
+    }
+}
+
+.main-title{    
+    display: inline-block; line-height: 65px;
+    font-size: 40px; font-family: NanumSquare;
+    @include breakPoint(992px){  
+        font-size: 36px; line-height: 50px;
+    }
+    @include breakPoint(720px){
+        font-size: 30px; line-height: 46px;
+    }
+    @include breakPoint(480px){
+        font-size: 27px; line-height: 36px;
+    }
+    span{
+        display: block;     
+        @include breakPoint(992px){   
+            display: inline-block;
+        }     
+    }    
+}
+
+.sitemap-dim{
+    display: none;
+    position: fixed; top: 0; bottom: 0; left: 0; right: 0;
+    z-index: 3;
+    width: 100%; height: 100vh;
+    background: rgba(0,0,0,.5);
+    .sitemap{
+        display: none;
+        position: absolute; left: 0; right: 0; 
+        width: 100%;
+        background: $primarywhite;
+        .top-side{
+            height: 112px; line-height: 112px;
+            .logo{display: inline-block;}
+        }
+        .bottom-side{
+            padding: 70px 0;
+            .smap-gnb{
+                .inner{
+                    float: left; width: 50%; 
+                    padding: 20px 0;     
+                    @include clearfix;  
+                    @include box-sizing;
+                    &:nth-child(1){
+                        border-bottom: 1px solid $lGreyBorder;
+                    }
+                    &:nth-child(2){                        
+                        border-bottom: 1px solid $lGreyBorder;
+                        dl{
+                            padding-left: 35px;
+                            border-left: 1px solid $lGreyBorder;
+                        }
+                    }
+                    &:nth-child(4){                        
+                        dl{
+                            padding-left: 35px;
+                            border-left: 1px solid $lGreyBorder;
+                        }
+                    }
+                }
+                dl{
+                    height: 55px; line-height: 55px;   
+                    font-family: NanumSquare;
+                    @include clearfix;                   
+                    @include box-sizing;
+                    dt{
+                        float: left; 
+                        width: 140px; padding-right: 10px;
+                        font-size: 17px; font-weight: 900;
+                        @include box-sizing;
+                        a{
+                            position: relative;
+                            &:before{
+                                position: absolute; top: -13px;
+                                content: '';
+                                display: block;
+                                width: 22px; height: 3px;
+                                background: $primaryColor;
+                            }
+                        }
+                    }
+                    dd{
+                        float: left; margin-right: 15px;
+                        color: $subPrimaryColor; font-size: 17px; font-weight: 700;           
+                        &:last-child{margin-right: 0;}
+                        @include breakPoint(1920px, 993px){
+                            a{
+                                transition: all 0.1s;   
+                                &:hover{
+                                    color: $primaryColor;
+                                }
+                            }                            
+                        }
+                    }
+                }
+            }
+            .sns-area{
+                margin-top: 40px;
+                li{
+                    float: left; margin-right: 20px;
+                    &:last-child{margin-right: 0;}
+                }
+            }
+        }
+    }
+}
+
+
+

@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+
+// ※ reset을 제외한 scss앞에 _(언더바)를 붙일 것.
+// _(언더바)붙인 파일은 부분화 파일임을 명시함.
+
+// Depth level 1. [ base : reset -> font ]
+@import "base/reset.css";
+@import "base/font";
+
+// Depth level 2. [ helper : mixin ]
+@import "helper/mixin";
+
+// Depth level 3. [ layout : component -> container ->  header -> footer  ]
+@import "layout/component";
+@import "layout/container";
+@import "layout/header";
+@import "layout/footer";
+
+// Depth level 4. [ pages : main ]
+@import "pages/main";
+
+// Depth level 4. [ vendor ]
+@import "vendor/swiper.min.css";
+@import "vendor/vendor";

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="author" content="문세미">
+        <meta name="keyword" content="토스 리디자인">
+        <meta name="description" content="토스 리디자인">
+        <title>토스(리디자인)</title>
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <script src="../assets/js/jquery-2.2.4.min.js"></script>
+        <script src="../assets/js/swiper.min.js"></script>
+        <script defer src="../assets/js/common.js"></script>
+    </head>    
+    <body>
+        <header class="header">
+            <div class="pc-ver main-container clearfix">
+                <h1 class="hidden">토스</h1>
+                <div class="logo"><a href="javascript:;"><img src="../assets/images/logo.png" alt="토스 로고"></a></div>
+                <ul class="pc-gnb clearfix">
+                    <li><a href="javascript:;">서비스</a>
+                        <ul>
+                            <li><a href="javascript:;">공지사항</a></li>
+                            <li><a href="javascript:;">고객센터</a></li>
+                            <li><a href="javascript:;">공인인증센터</a></li>
+                            <li><a href="javascript:;">계정 일시잠금</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:;">회사</a>
+                        <ul>
+                            <li><a href="javascript:;">회사 소개</a></li>
+                            <li><a href="javascript:;">토스인슈어런스</a></li>
+                            <li><a href="javascript:;">채용</a></li>
+                            <li><a href="javascript:;">블로그</a></li>
+                            <li><a href="javascript:;">공고</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:;">문의</a>
+                        <ul>
+                            <li><a href="javascript:;">사업 제휴</a></li>
+                            <li><a href="javascript:;">마케팅-PR</a></li>                          
+                            <li><a href="javascript:;">IR</a></li>                          
+                        </ul>
+                    </li>
+                    <li><a href="javascript:;">고객센터</a>
+                        <ul>
+                            <li><a href="javascript:;">전화</a></li>
+                            <li><a href="javascript:;">이메일</a></li>                  
+                            <li><a href="javascript:;">카카오톡</a></li>                  
+                        </ul>
+                    </li>
+                </ul>
+                <div class="smap-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="tab-ver main-container">      
+                <div class="logo"><a href="javascript:;"><img src="../assets/images/logo.png" alt="회사 로고"></a></div>
+                <div class="mob-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>            
+                <div class="mob-gnb-area">   
+                    <div class="logo"><a href="javascript:;"><img src="../assets/images/logo.png" alt="회사 로고"></a></div>   
+                    <ul class="mob-gnb">
+                        <li><a href="javascript:;">서비스</a>
+                            <ul>
+                                <li><a href="javascript:;">공지사항</a></li>
+                                <li><a href="javascript:;">고객센터</a></li>
+                                <li><a href="javascript:;">공인인증센터</a></li>
+                                <li><a href="javascript:;">계정 일시잠금</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:;">회사</a>
+                            <ul>
+                                <li><a href="javascript:;">회사 소개</a></li>
+                                <li><a href="javascript:;">토스인슈어런스</a></li>
+                                <li><a href="javascript:;">채용</a></li>
+                                <li><a href="javascript:;">블로그</a></li>
+                                <li><a href="javascript:;">공고</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:;">문의</a>
+                            <ul>
+                                <li><a href="javascript:;">사업 제휴</a></li>
+                                <li><a href="javascript:;">마케팅-PR</a></li>                          
+                                <li><a href="javascript:;">IR</a></li>                          
+                            </ul>
+                        </li>
+                        <li><a href="javascript:;">고객센터</a>
+                            <ul>
+                                <li><a href="javascript:;">전화</a></li>
+                                <li><a href="javascript:;">이메일</a></li>                  
+                                <li><a href="javascript:;">카카오톡</a></li>                  
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="sns-area clearfix">
+                        <li><a href="javascript:;"><img src="../assets/images/kakao-on.png" alt="sns아이콘"></a></li>
+                        <li><a href="javascript:;"><img src="../assets/images/insta-on.png" alt="sns아이콘"></a></li>
+                        <li><a href="javascript:;"><img src="../assets/images/twitter-on.png" alt="sns아이콘"></a></li>
+                        <li><a href="javascript:;"><img src="../assets/images/fbook-on.png" alt="sns아이콘"></a></li>
+                    </ul>
+                </div>
+            </div> 
+            
+            <div class="sitemap-dim">
+                <div class="sitemap">
+                    <div class="main-container">
+                        <div class="top-side">
+                            <div class="logo"><a href="javascript:;"><img src="../assets/images/logo.png" alt="회사 로고"></a></div>
+                        </div>
+                        <div class="bottom-side">
+                            <div class="smap-gnb clearfix">
+                                <div class="inner">
+                                    <dl>
+                                        <dt><a href="javascript:;">서비스</a></dt>
+                                        <dd><a href="javascript:;">공지사항</a></dd>
+                                        <dd><a href="javascript:;">고객센터</a></dd>
+                                        <dd><a href="javascript:;">공인인증센터</a></dd>
+                                        <dd><a href="javascript:;">계정 일시잠금</a></dd>
+                                    </dl>
+                                </div>
+                                <div class="inner">
+                                    <dl>
+                                        <dt><a href="javascript:;">회사</a></dt>
+                                        <dd><a href="javascript:;">회사 소개</a></dd>
+                                        <dd><a href="javascript:;">토스인슈어런스</a></dd>
+                                        <dd><a href="javascript:;">채용</a></dd>
+                                        <dd><a href="javascript:;">블로그</a></dd>
+                                        <dd><a href="javascript:;">공고</a></dd>
+                                    </dl>
+                                </div>   
+                                <div class="inner">
+                                    <dl>
+                                        <dt><a href="javascript:;">문의</a></dt>
+                                        <dd><a href="javascript:;">사업 제휴</a></dd>
+                                        <dd><a href="javascript:;">마케팅-PR</a></dd>
+                                        <dd><a href="javascript:;">IR</a></dd>
+                                    </dl>
+                                </div>                                
+                                <div class="inner">
+                                    <dl>
+                                        <dt><a href="javascript:;">고객센터</a></dt>
+                                        <dd><a href="javascript:;">전화</a></dd>
+                                        <dd><a href="javascript:;">이메일</a></dd>
+                                        <dd><a href="javascript:;">카카오톡</a></dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <ul class="sns-area clearfix">
+                                <li><a href="javascript:;"><img src="../assets/images/kakao-off.png" onmouseover="this.src='../assets/images/kakao-on.png'" onmouseout="this.src='../assets/images/kakao-off.png'" alt="sns아이콘"></a></li>
+                                <li><a href="javascript:;"><img src="../assets/images/insta-off.png" onmouseover="this.src='../assets/images/insta-on.png'" onmouseout="this.src='../assets/images/insta-off.png'" alt="sns아이콘"></a></li>
+                                <li><a href="javascript:;"><img src="../assets/images/twitter-off.png" onmouseover="this.src='../assets/images/twitter-on.png'" onmouseout="this.src='../assets/images/twitter-off.png'" alt="sns아이콘"></a></li>
+                                <li><a href="javascript:;"><img src="../assets/images/fbook-off.png" onmouseover="this.src='../assets/images/fbook-on.png'" onmouseout="this.src='../assets/images/fbook-off.png'" alt="sns아이콘"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>            
+
+        
+        <div class="main">
+            <div class="main-visual swiper-container">
+                <!-- 메인배너 이미지 권장사이즈 
+                pc : 1920*944 / tab : 992*945 / mob : 720*1000 -->
+                <ul class="swiper-wrapper">
+                    <li class="first swiper-slide" style="background-image: url(../assets/images/pc-main-visual01.png)">
+                       <div class="mv-main-container clearfix">
+                            <p class="title">
+
+                            </p>
+                            <a href="javascript:;"><button class="btn">자세히보기</button></a>
+                       </div>
+                    </li>
+                    <li class="second swiper-slide" style="background-image: url(../assets/images/pc-main-visual02.png)">
+                        <div class="mv-main-container clearfix">
+                            <p class="title">
+
+                            </p>
+                            <a href="javascript:;"><button class="btn">자세히보기</button></a>
+                        </div>
+                    </li>
+                </ul>                  
+                <div class="swiper-pagination mb-pager"></div> 
+                <script>
+                     var swiper01 = new Swiper('.main-visual', {
+                        loop: true,
+                        speed: 1000,
+                        autoplay: {
+                            delay: 3000,
+                        },
+                        pagination: {
+                            el: '.swiper-pagination',
+                            clickable: true,
+                        }, 
+                    });
+                </script>
+            </div>
+
+            <div class="section01" style="background-image: url(../assets/images/pc-section01-bg.png);">
+                <!-- section01 이미지 권장사이즈 
+                pc : 428*398 / tab : 428*398 / mob : 428*398 -->
+                <div class="main-container80">
+                    <div class="main-title-area">
+                        <h3 class="main-title"><a href="javascript:;"></a></h3>
+                        <p></p>
+                    </div>
+                    <div class="swiper-container">                   
+                        <div class="swiper-wrapper">           
+                            <div class="swiper-slide">
+                                <a href="javascript:;">
+                                    <img src="../assets/images/sec01-img01.png" alt="컨텐츠이미지">
+                                    <div class="txt-area">
+                                        <p></p>
+                                        <p></p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="javascript:;">
+                                    <img src="../assets/images/sec01-img02.png" alt="컨텐츠이미지">
+                                    <div class="txt-area">
+                                        <p></p>
+                                        <p></p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>                            
+                    </div>
+                    <div class="swiper-button-next sec01-next"></div>
+                    <div class="swiper-button-prev sec01-prev"></div>
+                </div>       
+                <script>
+                    var swiper01 = new Swiper('.section01 .swiper-container', {
+                        loop: true,
+                        slidesPerView: 2,
+                        spaceBetween: 60,  
+                        navigation: {
+                            nextEl: '.sec01-next',
+                            prevEl: '.sec01-prev',
+                        },    
+                        breakpoints: {
+                            720: {
+                                spaceBetween: 40,
+                            },
+                            460: {
+                                slidesPerView: 1,
+                                spaceBetween: 40,
+                            }
+                        }
+                    });
+                </script>             
+            </div>
+
+            <div class="section02" style="background-image: url(../assets/images/pc-section02-bg.png);">
+                <!-- section02 이미지 권장사이즈 
+                pc : 710*250 / tab : 710*250 / mob : 710*250 -->
+                <div class="main-container80">
+                    <div class="l-side">
+                        <h3 class="main-title">
+                            <span></span>
+                            <span></span>
+                        </h3>
+                    </div>
+                    <div class="r-side">
+                        <a href="javascript:;"><img src="../assets/images/pc-section02-img.png" alt="컨텐츠이미지"></img></a>
+                    </div>
+                </div>                    
+            </div>
+
+            <div class="section03" style="background-image: url(../assets/images/pc-section03-bg.png);">
+                <!-- section03 이미지 권장사이즈 
+                pc : 570*445 / tab : 570*445 / mob : 570*445 -->
+                <div class="main-half-container80">
+                    <div class="l-side">
+                        <h3 class="main-title">
+                            <span></span>
+                            <span></span>
+                        </h3>     
+                        <p>
+                            <span></span>
+                            <span></span>
+                        </p>  
+                        <div class="btn"><input type="button" value="바로가기"></div>       
+                    </div>
+                    <div class="r-side">
+                        <img src="../assets/images/pc-section03-img.png" alt="컨텐츠이미지">                       
+                    </div>
+                </div>
+                <script>
+                    var swiper03 = new Swiper('.section03 .swiper-container', {
+                        slidesPerView: 1.95,
+                        loop: true,
+                        centeredSlides: true,
+                        freeMode: true,
+                        breakpoints: {
+                            720: {
+                                slidesPerView: 1.5,
+                            },
+                            480: {
+                                slidesPerView: 1.1,
+                            }
+                        }
+                    });
+                </script>                    
+            </div>
+
+            <div class="section04">
+                <!-- section04 이미지 권장사이즈 
+                pc : 886*478 / tab : 886*478 / mob : 886*478 -->
+                <div class="main-half-container80">
+                    <div class="l-side">
+                        <h3 class="main-title">
+                            <span></span> 
+                            <span></span>
+                        </h3>     
+                        <p>
+                            <span></span>
+                            <span></span>
+                        </p>  
+                        <div class="btn"><input type="button" value="바로가기"></div>                     
+                    </div>
+                    <div class="r-side">
+                        <img src="../assets/images/pc-section04-img.png" alt="컨텐츠이미지">    
+                    </div>
+                </div>                    
+            </div>
+        </div>            
+
+        <footer class="footer">
+           <div class="main-container clearfix">
+                <div class="f-logo"><a href="javascript:;"><img src="../assets/images/f-logo.png" alt="회사 로고"></a></div> 
+                <ul class="f-info1">
+                    <li><a href="javascript:;">개인정보 취급방침</a></li>
+                    <li><a href="javascript:;">공지사항</a></li>
+                </ul>      
+                <div class="f-info2">                     
+                    <p>
+                        <span></span>
+                    </p>
+                    <p>
+                        <span></span>
+                        <span class="bar">/</span>
+                        <span></span>
+                    </p> 
+                    <p>
+                        <span class="break"></span>
+                    </p> 
+                    <p>
+                        <span></span>
+                        <span class="bar">/</span>
+                        <span></span>
+                    </p>                                    
+                    <p class="copy">
+                        Copyright ⓒ semiMoon All Rights Reserved.  
+                    </p>
+                </div>
+           </div>
+        </footer>
+
+        <div class="quickmenu">  
+            <div class="totop-btn"><a href="javascript:;"></a></div>
+        </div>
+    </body>
+</html>

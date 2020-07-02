@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+// color mixin start
+$primaryColor: #0051ff ;
+$nineFontcolor: #999999;
+$eightFontColor: #888888;
+$subPrimaryColor: #666666;
+$fiveGrey: #555555;
+$primaryFontColor: #333333;
+
+$primaryblack: #000000;
+$primarywhite: #ffffff;
+
+$whBg: #f9f9f9;
+$primaryborder: #cccccc;
+$subborder: #dddddd;
+$bColor: #bbbbbb;
+$lGreyBorder: #eeeeee;
+
+
+
+// 말줄임표 mixin
+@mixin ellipsis{
+    overflow: hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+
+@mixin ellipsis-clamp($ec: 2){
+    display: -webkit-box;
+    -webkit-line-clamp: $ec;
+    -webkit-box-orient: vertical;
+    overflow: hidden; text-overflow:ellipsis;
+}
+
+
+// media queary breaking point
+@mixin breakPoint($point:null, $minpoint:0px) {
+	@media all and ( min-width: #{$minpoint} ) and ( max-width: #{$point} ) {
+		@content;
+	}
+}
+
+
+// 형태 mixin
+@mixin clearfix{
+    &:after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+}
+
+@mixin box-sizing{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+@mixin bg-defalt{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+@mixin in-b{
+    display: inline-block;
+    width: 100%; height: 100%;
+}
+
+@mixin border-radius($br: 50%){
+    border-radius: $br;
+    -moz-border-radius: $br;
+    -webkit-border-radius: $br;
+}
+
+
+// position 속성 mixin
+@mixin position-d{
+    position: absolute;
+    top: 0; left: 0;
+}
+
+@mixin center-center{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin top-center{
+    position: absolute;
+    top: 50%; transform: translateY(-50%);
+}
+
+@mixin left-center{
+    position: absolute;
+    left: 50%; transform: translateX(-50%);
+}
+

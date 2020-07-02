@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+.main .main-visual{ 
+    .mb-pager{
+        bottom: 60px;
+        @include breakPoint(480px){
+            bottom: 30px;
+        }
+        span{
+            opacity: 1;      
+            width: 61px; height: 7px;
+            margin: 0 14px 0 0;
+            background: $primaryFontColor;
+            transition: all 0.2s;;      
+            @include border-radius(0);  
+            &:last-child{margin: 0;}              
+            &.swiper-pagination-bullet-active{
+                background: $primaryColor;
+            }
+        }
+    }
+}
+//메인비주얼 슬라이더 부분
+
+
+.section01{
+    .sec01-prev{
+        top: calc(50% + 68px); transform: translateY(-50%); left: 0;
+        margin-top: 0;
+        width: 34px; height: 66px;
+        background-image: url(../images/sec01-prev.png);
+        background-size: 100%;
+        @include breakPoint(1404px){
+            left: 24px;
+        }
+        @include breakPoint(992px){
+            width: 23px; height: 44px;
+        }
+        @include breakPoint(720px){
+            left: 16px; 
+            width: 17px; height: 33px;
+        }
+    }
+    .sec01-next{
+        top: calc(50% + 68px); transform: translateY(-50%); right: 0;
+        margin-top: 0;
+        width: 34px; height: 66px;
+        background-image: url(../images/sec01-next.png);
+        background-size: 100%;
+        @include breakPoint(1404px){
+            right: 24px;
+        }
+        @include breakPoint(992px){
+            width: 23px; height: 44px;
+        }
+        @include breakPoint(720px){
+            right: 16px; 
+            width: 17px; height: 33px;
+        }
+    }
+}
+// section01 end;
+
+
+.section03 .slide-box .sec03-pager{
+    bottom: 12px;
+}
+.section03 .slide-box .swiper-pagination-bullet{
+    opacity: 1;
+    width: 11px; height: 11px;
+    background: $primarywhite;
+    transition: all 0.3s;
+    &.swiper-pagination-bullet-active{
+        width: 27px;
+        background: $subPrimaryColor;
+        @include border-radius(20px);
+    }
+}
+// section03 end;
+
+

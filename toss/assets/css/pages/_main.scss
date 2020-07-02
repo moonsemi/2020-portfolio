@@ -1,0 +1,378 @@
+@charset "UTF-8";
+
+.main{
+    width: 100%; height: 100%; 
+    .pc-ver{
+        @include breakPoint(992px){
+            display: none!important;
+        }
+    }
+    .tab-ver{
+        display: none!important;
+        @include breakPoint(992px, 721px){
+            display: block!important;        
+        }
+        @include breakPoint(720px){
+            display: none!important;
+        }
+    }
+    .mob-ver{
+        display: none!important;
+        @include breakPoint(720px){
+            display: block!important;
+        }
+    }
+
+    
+    .main-visual{        
+        .swiper-slide{
+            height: 944px;
+            @include bg-defalt;
+            @include breakPoint(992px){
+                height: 0;
+                padding-top: calc(945/992*100%); 
+            }
+            @include breakPoint(720px){
+                padding-top: calc(1000/720*100%);
+            }
+            .mv-main-container{
+                position: relative; top: 360px; z-index: 2;  
+                padding-left: 38%;                  
+                @include breakPoint(992px){
+                    position: absolute; top: calc(50% + 40px);
+                    transform: translateY(-50%);  padding-left: 58%;  
+                }
+                @include breakPoint(720px){
+                    top: 74%;
+                    padding-left: 0; text-align: center;
+                }
+                @include breakPoint(640px){
+                    top: 67%;
+                }
+                .title{
+                    margin-bottom: 60px; 
+                    font-size: 40px; font-family: NanumSquare;
+                    font-weight: 700; line-height: 58px;
+                    @include breakPoint(992px){
+                        margin-bottom: 16%; 
+                        font-size: 36px; line-height: 50px;
+                    }
+                    @include breakPoint(720px){
+                        margin-bottom: 7%;
+                        font-size: 32px; line-height: 46px;
+                    }
+                    @include breakPoint(480px){
+                        font-size: 28px; line-height: 36px;
+                    }
+                }
+                a{
+                    .btn{   
+                        display: inline-block;
+                        width: 184px; height: 60px;
+                        border: 3px solid $primaryColor;                     
+                        font-size: 18px; font-weight: 900;
+                        font-family: NanumSquare; color: $primaryColor;
+                        transition: all 0.2s;                        
+                        @include box-sizing;                        
+                        @include breakPoint(1920px, 993px){
+                            &:hover{
+                                background: $primaryColor;
+                                color: $primarywhite;
+                                -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.08);
+                                -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.08);
+                                box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.08);
+                            }
+                        }
+                        @include breakPoint(480px){
+                            width: 150px; height: 50px;
+                        }
+                    }
+                }
+            }
+
+            // 개발 후 삭제할 부분
+            &.first{
+                @include breakPoint(992px){
+                    background-image: url(../images/tab-main-visual01.png)!important;
+                }   
+                @include breakPoint(720px){
+                    background-image: url(../images/mob-main-visual01.png)!important;
+                }  
+            }
+            &.second{
+                @include breakPoint(992px){
+                    background-image: url(../images/tab-main-visual02.png)!important;
+                }   
+                @include breakPoint(720px){
+                    background-image: url(../images/mob-main-visual02.png)!important;
+                }  
+            }
+            // &.third{
+            //     @include breakPoint(992px){
+            //         background-image: url(../images/tab-main-visual03.png)!important;
+            //     }   
+            //     @include breakPoint(720px){
+            //         background-image: url(../images/mob-main-visual03.jpg)!important;
+            //     }  
+            // }
+        }      
+    }
+    //main-visual end;
+
+    .section01{
+        @include breakPoint(992px){
+            background-image: url(../images/tab-section01-bg.png)!important;
+        }
+        @include breakPoint(720px){
+            background-image: url(../images/mob-section01-bg.png)!important;
+        }
+        .main-title-area{
+            margin-bottom: 60px; text-align: center;
+            @include breakPoint(992px){
+                margin-bottom: 20px;
+            }
+            h3{
+                @include breakPoint(428px){
+                    font-size: 22px;
+                }
+                @include breakPoint(360px){
+                    font-size: 19px;
+                }
+               a{
+                position: relative; z-index: 1;                
+                &:after{
+                    position: absolute; bottom: 0; left: 0; z-index: -1;
+                    content: '';                
+                    width: 100%; height: 42%;
+                    background: $primaryColor;
+                }
+               }
+            }
+            p{
+                margin-top: 25px;
+                text-align: center;
+                font-size: 23px; color: $subPrimaryColor;
+                font-family: NanumSquare; font-weight: 700;
+                @include breakPoint(992px){
+                    font-size: 20px;
+                }
+                @include breakPoint(480px){
+                    font-size: 18px;
+                }
+                @include breakPoint(428px){
+                    font-size: 16.5px;
+                }
+            }
+        }        
+        .swiper-container{
+            margin: 0 14.4%; padding: 3%;    
+            @include breakPoint(992px){  
+                margin: 0; padding: 2%;
+            }  
+            .swiper-slide{
+                display: inline-block;
+                vertical-align: top;
+                transition: all 0.35s;
+                -webkit-box-shadow: 0 3px 23px 0 rgba(0,0,0,0.08);
+                -moz-box-shadow: 0 3px 23px 0 rgba(0,0,0,0.08);
+                box-shadow: 0 3px 23px 0 rgba(0,0,0,0.08);
+                &:last-child{margin-right: 0;}
+                @include breakPoint(1920px, 993px){
+                    &:hover{
+                        margin-top: -24px;
+                        -webkit-box-shadow: 0 3px 23px 0 rgba(0,0,0,0.18);
+                        -moz-box-shadow: 0 3px 23px 0 rgba(0,0,0,0.18);
+                        box-shadow: 0 3px 23px 0 rgba(0,0,0,0.18);
+                    }
+                }               
+                .txt-area{
+                    padding: 45px 35px 70px; 
+                    border-top: 1px solid $lGreyBorder;
+                    background: $primarywhite;
+                    font-family: NanumSquare; font-weight: 700;
+                    @include box-sizing;
+                    @include breakPoint(720px){
+                        padding: 13% 11% 20%;
+                    }
+                    p{
+                        @include ellipsis;
+                        &:first-child{
+                            font-size: 17px; color: $subPrimaryColor;
+                            @include breakPoint(720px){
+                                font-size: 15px; font-family: NanumGothic;
+                            }
+                        }
+                        &:last-child{
+                            margin-top: 12px;
+                            font-size: 22px; color: $primaryFontColor; font-weight: 900;
+                            @include breakPoint(992px){
+                                font-size: 20px;
+                            }
+                            @include breakPoint(720px){
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }       
+    }
+    //section01 end;
+
+    .section02{
+        .main-container80 > div{
+            display: inline-block;
+            vertical-align: top;
+            @include breakPoint(992px){
+                display: block;
+            }
+        }
+        h3{
+            @include top-center;
+            color: $primarywhite;
+            @include breakPoint(992px){
+                position: static; transform: translateY(0);
+                width: 100%; text-align: center;
+            } 
+            &:before{
+                content: '';
+                display: block; 
+                width: 95px; height: 10px;
+                margin-bottom: 42px;
+                background: $primarywhite;
+                @include breakPoint(992px){
+                    margin: 0 auto 38px;
+                }
+            }
+        }
+        .r-side{
+            padding-left: 35%;
+            @include breakPoint(992px){
+                padding-left: 0;  text-align: center;
+                margin-top: 70px;
+            }
+        }
+    }
+    //section02 end;
+
+    .section03{
+        .main-half-container80 > div{
+            display: inline-block;
+            vertical-align: top;
+            @include breakPoint(992px){
+                display: block;
+            }
+        }
+        .l-side{
+            @include top-center; right: 15%;
+            @include breakPoint(992px){
+                position: static; transform: translateY(0);
+                width: 100%; text-align: center;
+            } 
+            h3{
+                color: $primarywhite; 
+            }
+            p{
+                margin-top: 20px;
+                color: $bColor; font-size: 19px; font-weight: 700; font-family: 
+                NanumSquare; line-height: 35px;
+                span{
+                    display: block;                    
+                }               
+                @include breakPoint(720px){
+                    font-size: 17px; line-height: 30px;
+                }
+                @include breakPoint(370px){
+                    span{display: inline;}
+                }
+            }
+            .btn{
+                display: inline-block;
+                width: 184px; height: 60px;
+                margin-top: 40px;
+                background: $primarywhite;
+                transition: all 0.2s;
+                input{
+                    font-size: 18px; font-weight: 900;
+                    font-family: NanumSquare;
+                    color: #0051ff; 
+                }                
+                @include breakPoint(1920px, 993px){
+                    &:hover{
+                        background: $primaryColor;
+                        input{color: $primarywhite;}   
+                    }
+                }
+                @include breakPoint(480px){
+                    width: 150px; height: 50px;
+                }
+            }
+        }
+        .r-side{
+            width: 41%; 
+            margin-top: 55px; text-align: center;
+            @include breakPoint(992px){
+                width: 100%; margin-right: 0;
+            }                     
+        }
+    }
+    //section03 end;
+
+    .section04{
+        .main-half-container80 > div{
+            display: inline-block;
+            vertical-align: top;
+        }
+        .l-side{
+            @include top-center;
+            @include breakPoint(992px){
+                position: static; transform: translateY(0);
+                width: 100%; text-align: center;
+            }
+            p{
+                margin-top: 20px;
+                color: $bColor; font-size: 19px; font-weight: 700; font-family: 
+                NanumSquare; line-height: 35px;
+                span{display: block;}
+                @include breakPoint(720px){
+                    font-size: 17px; line-height: 30px;
+                }
+                @include breakPoint(370px){
+                    span{display: inline;}
+                }
+            }
+            .btn{
+                display: inline-block;
+                width: 184px; height: 60px;
+                margin-top: 40px;
+                background: $primarywhite;
+                transition: all 0.2s;
+                -webkit-box-shadow: 0 3px 23px 0 rgba(0,0,0,0.1);
+                -moz-box-shadow: 0 3px 23px 0 rgba(0,0,0,0.1);
+                box-shadow: 0 3px 23px 0 rgba(0,0,0,0.1);
+                input{
+                    font-size: 18px; font-weight: 900;
+                    font-family: NanumSquare;
+                    color: #0051ff; 
+                }
+                @include breakPoint(1920px, 993px){
+                    &:hover{
+                        background: $primaryColor;
+                        input{color: $primarywhite;}   
+                    }
+                }
+                @include breakPoint(480px){
+                    width: 150px; height: 50px;
+                }
+            }
+        }
+        .r-side{
+            width: 64%; padding-left: 39%;
+            @include breakPoint(992px){
+                width: 100%; text-align: center;
+                margin-top: 55px; padding-left: 0;
+            } 
+        }
+    }
+    //section04 end;
+}

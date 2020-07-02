@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+html, body{
+    font-family: Lato, NanumGothic, NanumSquare, "맑은 고딕", dotum, "돋움", gulim, "굴림";
+    $primaryFontColor: $primaryFontColor;
+    font-weight: 500; font-size: 15px; color: $primaryFontColor;   
+    overflow-x: hidden;
+    @include breakPoint(480px){
+        font-size: 14px;
+    }
+}
+input, textarea, select{
+    color: #666;
+    font-size: 16px; font-weight: 500;
+    vertical-align: middle; 
+    @include breakPoint(480px){
+        padding-left: 6px;
+    }
+}
+
+input, textarea, select{
+    @include breakPoint(480px){
+        font-size: 15px;
+    }
+}
+
+
+.main-container80{
+    position: relative; 
+    max-width: 1404px; height: 100%;
+    margin: 0 auto; padding: 80px 0;
+    @include box-sizing;
+    @include breakPoint(1404px){
+        max-width: 100%; width: 100%; 
+        padding: 80px 24px;
+    }
+    @include breakPoint(720px){
+        padding: 80px 16px;
+    }
+}
+
+.main-half-container80{
+    position: relative; 
+    max-width: 1404px; height: 100%;
+    margin: 0 auto; padding: 80px 0 0;
+    @include box-sizing;
+    @include breakPoint(1404px){
+        max-width: 100%; width: 100%; 
+        padding: 80px 24px 0;
+    }
+    @include breakPoint(720px){
+        padding: 80px 16px 0;
+    }
+}
+
+.main-container{
+    max-width: 1404px; height: 100%;
+    margin: 0 auto; 
+    @include box-sizing;
+    @include breakPoint(1404px){
+        max-width: 100%; width: 100%; 
+        padding: 0 24px;
+    }
+    @include breakPoint(720px){
+        padding: 0 16px;
+    }
+}
+
+.mv-main-container{
+    max-width: 1070px; 
+    margin: 0 auto; 
+    @include box-sizing;
+    @include breakPoint(1404px){
+        width: 81%;
+    }
+    @include breakPoint(992px){
+        width: calc(100% - 48px);  margin: 0 24px;   
+    }
+    @include breakPoint(720px){
+        width: calc(100% - 32px); margin: 0 16px;        
+    }
+}
+
+
+
+
