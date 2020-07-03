@@ -220,30 +220,30 @@ input, textarea, select {
   input, textarea, select {
     font-size: 15px; } }
 
-.main-container80 {
+.main-container120 {
   position: relative;
   max-width: 1404px;
   height: 100%;
   margin: 0 auto;
-  padding: 80px 0;
+  padding: 120px 0;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box; }
   @media all and (min-width: 0px) and (max-width: 1404px) {
-    .main-container80 {
+    .main-container120 {
       max-width: 100%;
       width: 100%;
-      padding: 80px 24px; } }
+      padding: 120px 24px; } }
   @media all and (min-width: 0px) and (max-width: 720px) {
-    .main-container80 {
-      padding: 80px 16px; } }
+    .main-container120 {
+      padding: 110px 16px; } }
 
 .main-half-container80 {
   position: relative;
   max-width: 1404px;
   height: 100%;
   margin: 0 auto;
-  padding: 80px 0 0;
+  padding: 120px 0 0;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box; }
@@ -251,10 +251,10 @@ input, textarea, select {
     .main-half-container80 {
       max-width: 100%;
       width: 100%;
-      padding: 80px 24px 0; } }
+      padding: 120px 24px 0; } }
   @media all and (min-width: 0px) and (max-width: 720px) {
     .main-half-container80 {
-      padding: 80px 16px 0; } }
+      padding: 110px 16px 0; } }
 
 .main-container {
   max-width: 1404px;
@@ -315,7 +315,7 @@ input, textarea, select {
         position: relative;
         float: left;
         height: 100%;
-        padding: 0 70px 0 0; }
+        padding: 0 90px 0 0; }
         .header .pc-ver .pc-gnb > li:last-child {
           padding: 0 112px 0 0; }
         .header .pc-ver .pc-gnb > li.on > a {
@@ -579,7 +579,7 @@ input, textarea, select {
           top: 67%; } }
       .main .main-visual .swiper-slide .mv-main-container .title {
         margin-bottom: 60px;
-        font-size: 40px;
+        font-size: 38px;
         font-family: NanumSquare;
         font-weight: 700;
         line-height: 58px; }
@@ -662,7 +662,8 @@ input, textarea, select {
         content: '';
         width: 100%;
         height: 42%;
-        background: #0051ff; }
+        background: #0051ff;
+        opacity: 0.8; }
     .main .section01 .main-title-area p {
       margin-top: 25px;
       text-align: center;
@@ -735,40 +736,39 @@ input, textarea, select {
             @media all and (min-width: 0px) and (max-width: 720px) {
               .main .section01 .swiper-container .swiper-slide .txt-area p:last-child {
                 font-size: 18px; } }
-  .main .section02 .main-container80 > div {
-    display: inline-block;
-    vertical-align: top; }
+  .main .section02 .l-side {
+    float: left; }
+    .main .section02 .l-side h3 {
+      color: #ffffff;
+      font-size: 30px; }
+      @media all and (min-width: 0px) and (max-width: 992px) {
+        .main .section02 .l-side h3 {
+          width: 100%;
+          text-align: center; } }
+      .main .section02 .l-side h3:before {
+        content: '';
+        display: block;
+        width: 95px;
+        height: 10px;
+        margin-bottom: 42px;
+        background: #ffffff; }
+        @media all and (min-width: 0px) and (max-width: 992px) {
+          .main .section02 .l-side h3:before {
+            margin: 0 auto 38px; } }
     @media all and (min-width: 0px) and (max-width: 992px) {
-      .main .section02 .main-container80 > div {
-        display: block; } }
-  .main .section02 h3 {
+      .main .section02 .l-side {
+        float: none; } }
+  .main .section02 .r-side {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    color: #ffffff; }
-    @media all and (min-width: 0px) and (max-width: 992px) {
-      .main .section02 h3 {
-        position: static;
-        transform: translateY(0);
-        width: 100%;
-        text-align: center; } }
-    .main .section02 h3:before {
-      content: '';
-      display: block;
-      width: 95px;
-      height: 10px;
-      margin-bottom: 42px;
-      background: #ffffff; }
-      @media all and (min-width: 0px) and (max-width: 992px) {
-        .main .section02 h3:before {
-          margin: 0 auto 38px; } }
-  .main .section02 .r-side {
-    padding-left: 35%; }
+    right: 0; }
     @media all and (min-width: 0px) and (max-width: 992px) {
       .main .section02 .r-side {
-        padding-left: 0;
-        text-align: center;
-        margin-top: 70px; } }
+        position: static;
+        transform: translateY(0);
+        margin-top: 70px;
+        text-align: center; } }
   .main .section03 .main-half-container80 > div {
     display: inline-block;
     vertical-align: top; }
@@ -787,7 +787,7 @@ input, textarea, select {
         width: 100%;
         text-align: center; } }
     .main .section03 .l-side h3 {
-      color: #ffffff; }
+      color: #0051ff; }
     .main .section03 .l-side p {
       margin-top: 20px;
       color: #bbbbbb;
@@ -809,8 +809,11 @@ input, textarea, select {
       width: 184px;
       height: 60px;
       margin-top: 40px;
-      background: #ffffff;
-      transition: all 0.2s; }
+      border: 1px solid #0051ff;
+      transition: all 0.2s;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box; }
       .main .section03 .l-side .btn input {
         font-size: 18px;
         font-weight: 900;
