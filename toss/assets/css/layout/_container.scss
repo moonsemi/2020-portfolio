@@ -39,20 +39,6 @@ input, textarea, select{
     }
 }
 
-.main-half-container80{
-    position: relative; 
-    max-width: 1404px; height: 100%;
-    margin: 0 auto; padding: 120px 0 0;
-    @include box-sizing;
-    @include breakPoint(1404px){
-        max-width: 100%; width: 100%; 
-        padding: 120px 24px 0;
-    }
-    @include breakPoint(720px){
-        padding: 110px 16px 0;
-    }
-}
-
 .main-container{
     max-width: 1404px; height: 100%;
     margin: 0 auto; 

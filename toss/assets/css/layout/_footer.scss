@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 .footer{
-    padding: 50px 0; background: $lGreyBorder;    
+    padding: 100px 0;    
     text-align: center;
     color: $nineFontcolor; font-weight: 700; font-family: NanumGothic;
     .f-logo{
@@ -31,10 +31,8 @@
                     font-size: 15px;
                 }
             }       
-            a{
-                color: $primaryborder;
-            }
             span{
+                &.bar{margin: 0 6px;}
                 @include breakPoint(680px){
                     display: block;
                     &.bar{display: none;}

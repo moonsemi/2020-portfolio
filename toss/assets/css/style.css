@@ -238,24 +238,6 @@ input, textarea, select {
     .main-container120 {
       padding: 110px 16px; } }
 
-.main-half-container80 {
-  position: relative;
-  max-width: 1404px;
-  height: 100%;
-  margin: 0 auto;
-  padding: 120px 0 0;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box; }
-  @media all and (min-width: 0px) and (max-width: 1404px) {
-    .main-half-container80 {
-      max-width: 100%;
-      width: 100%;
-      padding: 120px 24px 0; } }
-  @media all and (min-width: 0px) and (max-width: 720px) {
-    .main-half-container80 {
-      padding: 110px 16px 0; } }
-
 .main-container {
   max-width: 1404px;
   height: 100%;
@@ -488,8 +470,7 @@ input, textarea, select {
             margin-right: 0; }
 
 .footer {
-  padding: 50px 0;
-  background: #eeeeee;
+  padding: 100px 0;
   text-align: center;
   color: #999999;
   font-weight: 700;
@@ -519,8 +500,8 @@ input, textarea, select {
       @media all and (min-width: 0px) and (max-width: 480px) {
         .footer .f-info2 p.copy {
           font-size: 15px; } }
-    .footer .f-info2 p a {
-      color: #cccccc; }
+    .footer .f-info2 p span.bar {
+      margin: 0 6px; }
     @media all and (min-width: 0px) and (max-width: 680px) {
       .footer .f-info2 p span {
         display: block; }
@@ -546,6 +527,9 @@ input, textarea, select {
     @media all and (min-width: 0px) and (max-width: 720px) {
       .main .mob-ver {
         display: block !important; } }
+  .main .bg-container {
+    background-repeat: no-repeat;
+    background-size: cover; }
   .main .main-visual .swiper-slide {
     height: 944px;
     background-size: cover;
@@ -769,11 +753,11 @@ input, textarea, select {
         transform: translateY(0);
         margin-top: 70px;
         text-align: center; } }
-  .main .section03 .main-half-container80 > div {
+  .main .section03 .main-container120 > div {
     display: inline-block;
     vertical-align: top; }
     @media all and (min-width: 0px) and (max-width: 992px) {
-      .main .section03 .main-half-container80 > div {
+      .main .section03 .main-container120 > div {
         display: block; } }
   .main .section03 .l-side {
     position: absolute;
@@ -790,7 +774,7 @@ input, textarea, select {
       color: #0051ff; }
     .main .section03 .l-side p {
       margin-top: 20px;
-      color: #bbbbbb;
+      color: #666666;
       font-size: 19px;
       font-weight: 700;
       font-family: NanumSquare;
@@ -836,19 +820,12 @@ input, textarea, select {
       .main .section03 .r-side {
         width: 100%;
         margin-right: 0; } }
-  .main .section04 .main-half-container80 > div {
-    display: inline-block;
-    vertical-align: top; }
-  .main .section04 .l-side {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%); }
-    @media all and (min-width: 0px) and (max-width: 992px) {
-      .main .section04 .l-side {
-        position: static;
-        transform: translateY(0);
-        width: 100%;
-        text-align: center; } }
+  .main .section04 {
+    background-image: url(../images/pc-section04-bg.png); }
+    .main .section04 .main-container120 > div {
+      float: left; }
+    .main .section04 .l-side .main-title {
+      color: #ffffff; }
     .main .section04 .l-side p {
       margin-top: 20px;
       color: #bbbbbb;
@@ -889,15 +866,19 @@ input, textarea, select {
         .main .section04 .l-side .btn {
           width: 150px;
           height: 50px; } }
-  .main .section04 .r-side {
-    width: 64%;
-    padding-left: 39%; }
-    @media all and (min-width: 0px) and (max-width: 992px) {
-      .main .section04 .r-side {
-        width: 100%;
-        text-align: center;
-        margin-top: 55px;
-        padding-left: 0; } }
+    .main .section04 .r-side {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+      margin-right: 35%; }
+      @media all and (min-width: 0px) and (max-width: 992px) {
+        .main .section04 .r-side {
+          position: static;
+          transform: translateY(0);
+          width: 100%;
+          text-align: center;
+          margin-top: 55px; } }
 
 .main .main-visual .mb-pager {
   bottom: 60px; }
