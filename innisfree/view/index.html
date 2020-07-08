@@ -6,8 +6,6 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>innisfree</title>
         <link rel="stylesheet" href="../assets/css/style.css">
-        <!-- swiperJs css -->
-        <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
         <!-- swiperJs js -->
         <script src="../assets/js/swiper.min.js"></script>
         <!-- js 기술 -->
@@ -416,6 +414,7 @@
             <!-- main-article05 end; -->
         </section>
         <!-- wrap end; -->
+
         <footer>
             <div class="top-side">
                 <ul class="main-container clearfix">
@@ -440,5 +439,25 @@
             </div>
         </footer>
         <!-- footer end; -->
+
+        <div class="quickmenu">  
+            <div class="totop-btn"><a href="javascript:;"></a></div>
+        </div>
+        <!-- quickmenu end; -->
+        <script>
+            let quickmenu = (function () {
+                $(document).on('scroll', window, function(){
+                    if ( $( this ).scrollTop() > 1 ) {
+                        $( '.totop-btn' ).fadeIn(200);
+                    } else {
+                        $( '.totop-btn' ).fadeOut(200);
+                    }
+                } );
+                $(document).on('click', ".totop-btn", function(){
+                    $( 'html, body' ).animate( { scrollTop : 0 }, 400 );
+                    return false;
+                } );
+            })();   
+        </script>
     </body>
 </html>

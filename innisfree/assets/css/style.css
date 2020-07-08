@@ -23,6 +23,7 @@ Inheritor : 문세미
 
 ====================== */
 @import url(base/reset.css);
+@import url(vendor/swiper.min.css);
 @font-face {
   font-family: Lato;
   font-weight: 400;
@@ -114,6 +115,32 @@ Inheritor : 문세미
       @media all and (min-width: 0) and (max-width: 992px) {
         .main-content .txt-area .view-detail a:hover:after {
           width: 0; } }
+
+.quickmenu {
+  position: fixed;
+  bottom: 30px;
+  right: calc(100%/29);
+  z-index: 1; }
+  @media all and (min-width: 0) and (max-width: 992px) {
+    .quickmenu {
+      right: 24px; } }
+  @media all and (min-width: 0) and (max-width: 720px) {
+    .quickmenu {
+      right: 16px; } }
+  .quickmenu .totop-btn {
+    display: none; }
+    .quickmenu .totop-btn a {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      background: url(../images/totop-quick-btn.png);
+      opacity: 0.5;
+      transition: all 0.3s; }
+      .quickmenu .totop-btn a:hover {
+        opacity: 1; }
+      @media all and (min-width: 0) and (max-width: 992px) {
+        .quickmenu .totop-btn a {
+          opacity: 1; } }
 
 body {
   font-size: 15px;
